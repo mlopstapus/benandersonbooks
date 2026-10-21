@@ -1,0 +1,41 @@
+# Book configuration. Every skill reads this first.
+# book-new fills it in during the basics interview; edit by hand any time.
+
+title: "Working Title"          # working title is fine; decided later
+slug: working-title              # folder name under books/
+author: ""
+
+genre:
+  primary: fantasy               # a module in templates/genres/ (fantasy | mystery | historical), or custom
+  secondary: []                  # e.g. [mystery]; secondaries add questions and checks
+  custom_module: null            # path inside this book if book-plan wrote one, e.g. craft/genre-module.md
+
+form: novella                    # short-story | novella | novel
+target_words: 40000
+chapter_words: 3500              # drafting target per chapter; drives planned splits
+chapters_planned: null           # set by book-plan
+
+pov:
+  person: third                  # first | third
+  mode: limited                  # limited | omniscient
+  characters: []                 # POV characters, primary first
+tense: past
+
+audience: adult                  # adult | young-adult | middle-grade
+dialect: american                # american | british | other: the reader's English, not the setting's
+period_words: flavor-only        # flavor-only (setting words the reader can infer) | strict-period | modern
+
+content_lines:                   # hard rules from the taste interview
+  - "example: no sex or nudity"
+  - "example: violence allowed, no gore"
+
+model_authors: []                # authors whose craft this book studies (book-new research)
+touchstones: []                  # books/films the author loves for this project
+
+calendar:
+  day0: null                     # e.g. "Friday, November 28"; book-plan locks this
+
+beta:
+  type: none                     # none | google-doc
+  doc_id: null
+  readers: []                    # names only; used to label comments in reports
