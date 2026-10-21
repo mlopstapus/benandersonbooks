@@ -1,6 +1,7 @@
 # Book configuration. Every skill reads this first.
 # book-new fills it in during the basics interview; edit by hand any time.
 
+phase: planning                  # planning | drafting | revising | released (book-next uses this)
 title: "Working Title"          # working title is fine; decided later
 slug: working-title              # folder name under books/
 author: ""

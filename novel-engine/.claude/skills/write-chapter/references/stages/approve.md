@@ -15,10 +15,10 @@ The approved chapter, its brief, the check report, and the author's answers on p
    - History → `story/events/`.
    - Historical facts → the research page, with its source; new real-world claims without a source go on the research page's open questions.
    - Plot and structure decisions → `manuscript/decisions.md`, and the outline if they change future chapters.
-3. **Update `story/continuity.md`:** calendar (what happened on which day), running counts, who knows what, any tracked meters, and a new **Details ledger** section for this chapter (every concrete detail a later chapter could contradict).
+3. **Update `story/continuity.md`** (and check each new ledger row against the chapter text, so the ledger never records a detail the chapter doesn't say): calendar (what happened on which day), running counts, who knows what, any tracked meters, and a new **Details ledger** section for this chapter (every concrete detail a later chapter could contradict).
 4. **Ripple check.** For each new fact, search the outline, canon pages and remaining briefs for anything it now contradicts (a count that shifts later chapters, a place that moves a scene, a rule that changes the climax). Fix planning pages directly. List anything that changes future plot for the author. Add retrofit-queue rows for earlier chapters if needed.
 5. **Retire placeholders.** Mark resolved open items resolved, update `status:` on pages the author has now approved, and delete superseded notes rather than keeping two versions.
-6. **Outline row:** mark the chapter written; note any change to what it actually does.
+6. **Outline row and brief:** mark the chapter written in the outline and note any change to what it actually does. Make sure the brief matches the final chapter (beats changed in revision are updated, not left stale).
 7. **Index:** add the chapter (and any new pages) to `index.md`.
 8. **Beta copy:** if `beta.type` is `google-doc`, append the chapter to the Doc following `engine/beta-google-doc.md` ("Append an approved chapter"), including verification. Batch any approved fixes to earlier chapters into the same sync.
 9. Set `stage: synced`. Commit `sync: chNN`. Log: `## [date] sync | ChNN: <facts added>, <pages touched>`.

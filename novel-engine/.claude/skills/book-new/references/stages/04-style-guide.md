@@ -4,7 +4,7 @@
 
 ## Fill the placeholders
 - Section D (drafting preamble): substitute `{{PERSON}}`, `{{MODE}}`, `{{TENSE}}`, `{{AUDIENCE}}`, `{{GENRE}}` from `book.yaml`.
-- Rule B10's examples and B14's word list: add any words or habits the author already flagged in the taste interview.
+- The belonging rule's examples and the reader's-English rule's word list: add any words or habits the author already flagged in the taste interview.
 
 ## Section F: genre promises
 From each genre module's **Reader promises**, plus the sub-genre promises the author named. Primary module first. Note any promise the book deliberately subverts.

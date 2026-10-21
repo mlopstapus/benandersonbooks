@@ -1,27 +1,32 @@
 # Stage: brief
 
 ## Load
-- The chapter's row in `manuscript/outline.md`, plus every thread beat, clue and set piece placed in this chapter.
-- `story/continuity.md`: calendar, running counts, who knows what, observable effects, retrofit queue, and the details ledger for the last two or three chapters. (Read in chunks.)
-- The previous chapter in full, and the summaries of the ones before it.
-- Only the canon pages for the characters, places and rules this chapter touches.
-- `craft/style-guide.md` section A (story rules), F (genre promises) and G (model-author story rules); `craft/reader-taste.md`.
-- Open items in `manuscript/decisions.md` that affect this chapter.
+Read these, in this order. Long files: list their headings first (`grep -n '^#' <file>`), then read the sections you need.
+
+1. `engine/conventions.md`, the book's `book.yaml`, `CLAUDE.md` (its cast map says which file holds which character; its notes say where the calendar lives if not in continuity.md).
+2. The chapter's row in `manuscript/outline.md`, plus every thread beat, clue, set piece and rule appearance placed in this chapter.
+3. **Current state** from `story/continuity.md`: the calendar, running counts, who knows what, observable effects and the retrofit queue. Where these are kept as per-chapter entries in the details ledger rather than one table, use the latest entries (the previous chapter's, then the one before). Also read the details-ledger sections for the last two or three chapters.
+4. The previous chapter in full, and the frontmatter `summary:` of every earlier chapter.
+5. Canon pages only for the characters, places and rules this chapter touches. On long append-only pages, read the core sections at the top plus the most recent dated sections.
+6. `craft/style-guide.md` sections A (story rules), F (genre promises), G (model-author story rules) and I (book-specific rules); `craft/reader-taste.md`.
+7. `manuscript/decisions.md`: open items, and any settled entry that names this chapter or a later one.
+8. Any planning item still marked as a pending proposal that touches this chapter (search the outline and canon pages for `proposal`).
 
 ## Write
 `manuscript/briefs/chNN-brief.md` from `templates/pages/brief.md`. Rules:
-- **Day and time** follow the calendar exactly and pick up from the previous chapter's last moment.
+- **Day and time** follow the calendar exactly and pick up from the previous chapter's last moment. Days are numbered from Day 0 (`calendar.day0` in book.yaml) and given with weekday and date.
 - **Running counts** before → after for every count this chapter touches.
-- **Beats** carry their reasons. When a beat depends on a rule or an earlier chapter, cite it ("set up in Ch8", "range rule"). When a choice needs explaining on the page ("why she doesn't just go to the police"), write the reason into the beat.
+- **Beats** carry their reasons. When a beat depends on a rule or an earlier chapter, cite it ("set up in Ch8", "range rule").
+- **"Why doesn't she just…?"** List every obvious alternative a reader will ask about (use the power, call for help, run, wait, tell someone) and make sure the brief answers each one, in a beat or as an open question.
 - **Who knows what at the end**, one line per main character, offstage ones included.
-- **Must not** lists the repeats to avoid: earlier beats, images and lines this chapter could echo. Search earlier chapters for them.
-- **Open questions for the author:** anything the outline leaves undecided, each with a recommendation. Don't invent the answer silently.
+- **Repeats:** grep the chapter's key places, objects, actions and set-up lines across earlier chapters and read the hits. Anything this chapter would echo goes in **Must not**, or becomes a deliberate callback.
+- **Open questions for the author:** anything the outline leaves undecided, every pending proposal from step 8, and anything in the outline row that contradicts itself. Each with a recommendation. Don't invent the answer silently.
 - **New facts:** every name, place, rule detail or past event the chapter will introduce. Numbered, so the author can approve them one by one.
 
-Stay within locked rules. If the chapter seems to need a new capability or fact that changes canon, it's an open question, not a beat.
+Stay within locked rules. If the chapter seems to need a new capability, or a new behavior of an existing one, that is an open question, not a beat. (In *Ash of Verdance* a rule about what one user can sense of another was invented while drafting a late chapter; asked at the brief, it would have cost no retrofits.)
 
 ## Present
-Send the brief file and a short summary: the job of the chapter, the beats in a line each, and the numbered questions and new facts. Set `stage: brief-draft`. Commit `brief: chNN v1`.
+Send the brief file and a short summary: the job of the chapter, the beats in a line each, and the numbered questions and new facts. Make sure the brief's `stage` is `brief-draft`. Commit `brief: chNN v1`, log it.
 
 ## Revise
 Apply the author's notes, bump the version in `status`, and record each settled question in the beat it affects ("(author, YYYY-MM-DD)") and in `manuscript/decisions.md` if it affects later chapters. Expect several rounds; the author may reject the shape of the chapter outright (in *Ash of Verdance*, a planned sting was redesigned twice at the brief stage), and that is the cheapest place to do it.

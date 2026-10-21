@@ -15,8 +15,8 @@ Run the drafting in a **subagent** when available, giving it the load list below
 - Target `chapter_words` from `book.yaml`. If the chapter is clearly going to run past about 1.5× the target, stop and propose a split at a natural break instead of compressing.
 - Write with the style guide's drafting preamble (section D) and calibration rules (section H).
 - Use the book's own verbs and terms for the core system; check idioms-and-terms before using any in-world word.
-- Explain the core system for a lay reader where the style guide says to (B15).
-- Name people whenever it matters who is present (B9). Open every scene with a name.
+- Explain the core system for a lay reader where the style guide's lay-reader rule says to.
+- Name people whenever it matters who is present (the pronoun rule). Open every scene with a name.
 - After drafting, scan with `craft/ai-workflow/ai-prose-tells.md` and fix what it finds. Use it as a check, not as a prompt.
 
 ## Save

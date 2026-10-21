@@ -30,7 +30,7 @@ Covers whodunits, detective fiction, and the mystery thread inside a hybrid (fan
 ## Story folders
 - `story/system/the-crime.md`
 - `story/characters/` with a suspects section in the outline
-- `story/evidence.md` (optional): every piece of evidence, where it is, who has seen it
+- `story/evidence.md` (optional): every piece of evidence, where it is, who has seen it. If the book has no separate crime page or evidence page, checks use the outline's clue and payoff plan and continuity.md instead.
 
 ## Research targets
 - The model authors' talks and essays on plotting mysteries and fair play.

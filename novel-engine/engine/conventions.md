@@ -34,7 +34,7 @@ Advice ("magic needs costs") lives in `craft/`. Facts ("this magic costs the cas
 - Page-level `status:` in frontmatter is `draft` until the author approves the page, then `canon`.
 - When the author rejects something, strike it through (`~~...~~`) on planning pages rather than deleting it, so the history of the decision stays visible. On canon pages, remove it.
 - **One fact, one home.** Each fact lives on exactly one page; other pages link to it with `[[wikilinks]]`.
-- `story/continuity.md` is the single most important canon file. It holds the calendar, running counts, the who-knows-what matrix, what bystanders can observe, the retrofit queue, and a per-chapter details ledger. Keep it current; read it in chunks (`grep -n`, then a line range) once it grows.
+- `story/continuity.md` is the single most important canon file. It holds the calendar (unless the book's `CLAUDE.md` names another home for it), running counts, the who-knows-what matrix, what bystanders can observe, the retrofit queue, and a per-chapter details ledger. Keep it current; read it in chunks (`grep -n`, then a line range) once it grows.
 
 ## 4. Gates
 
@@ -61,32 +61,38 @@ When asking the author several things at once, number them so they can answer "1
 - Each book folder is its own local git repository with no remote (`book-new` creates it). After every stage that writes files, commit inside the book folder:
   `git -C books/<slug> add -A && git -C books/<slug> commit -m "<op>: <what>"`
   where `<op>` is one of `setup, taste, research, style, plan, canon, brief, draft, check, approve, sync, line-edit, trim, lint, decision, retrofit`.
-- Also append one line to `log.md`: `## [YYYY-MM-DD] <op> | <what>`. The log is for humans reading the vault in Obsidian; git is for diffs and rollback.
+- Also append one line to `log.md`: `## [YYYY-MM-DD] <op> | <what>`. The log is for humans reading the vault in Obsidian; git is for diffs and rollback. The log is append-only: never rewrite old lines, even ones that use other op names.
 - Never push a book folder anywhere.
 
 ## 7. Fresh eyes
 
 The writer of a chapter is blind to its own inventions. Continuity checks and other reviews run in a **separate subagent** that did not draft the text, and that subagent reports only; it changes nothing. If subagents are unavailable, start the review in a new session.
 
-## 8. Page conventions
+## 8. Style rules are cited by name
+
+Books number their style rules differently (the engine's default guide calls the pronoun rule B9; a migrated book may call it B13). Skills refer to rules by name: *the pronoun rule, the belonging rule, the reword rule, the payoff rule, the distinct-voices rule, the reader's-English rule, the lay-reader rule*. Find the rule in the book's style guide by its title.
+
+## 9. Page conventions
 
 - Kebab-case file names. Obsidian wikilinks `[[page-name]]` without extensions. Every page links to at least one other page and is listed in `index.md`.
-- Frontmatter on every page except `raw/`:
+- Frontmatter on every page except `raw/`, `CLAUDE.md`, `index.md`, `log.md` and files under `manuscript/reports/`:
   ```yaml
   ---
   title:
-  type: concept | guide | character | place | culture | event | myth | system | research | brief | chapter | report
+  type: concept | guide | character | place | culture | event | myth | system | research | brief | chapter | report | source
   tags: []
   sources: []
   updated: YYYY-MM-DD
   status: draft | canon
   ---
   ```
+  `status: draft | canon` applies to `story/` pages and planning pages. Briefs and chapters instead carry `stage:` (the machine-readable step, see write-chapter) and a free-text `status:` (the human note). Craft concept and source pages need no status.
+- Scene breaks in chapters are a line with `* * *` or `---`; the first sentence after one names the acting person or the POV character.
 - Split a page once it passes about 800 words, except `continuity.md`, `outline.md` and the core-system page, which are allowed to grow.
 - Never invent quotes from sources. Paraphrase unless copying the raw note exactly.
 - `raw/` holds notes, summaries and links. Do not copy the text of published books into it.
 
-## 9. Talking to the author
+## 10. Talking to the author
 
 - Lead with the result, not the process. Short reports: what changed, what needs a decision, where to look.
 - When a chapter or brief is ready to read, send the file itself (as an attachment where the app supports it) as well as saving it in the book.

@@ -7,7 +7,7 @@ description: Prose-level editing passes across one or more chapters of a book - 
 
 For prose, not plot. Plot and canon changes go through `/write-chapter` (one chapter) or `/book-plan` (the plan). If a line edit turns up a plot or canon problem, stop and raise it.
 
-Read `engine/conventions.md`, then `book.yaml`, `craft/style-guide.md` (rules B9–B15 and section I) and `craft/reader-taste.md`.
+Read `engine/conventions.md`, then `book.yaml`, `CLAUDE.md`, `craft/style-guide.md` (all prose rules, especially the pronoun, belonging, reword, distinct-voices and reader's-English rules, and section I) and `craft/reader-taste.md`.
 
 ## Modes
 Pick the mode(s) from the request. Each has its own file in `references/modes/`; load only what you run.
@@ -27,7 +27,7 @@ A full pre-release pass runs: repeats → trim → pronoun and belonging → wor
 1. **Commit first** inside the book folder, so the whole pass can be reverted in one step.
 2. **Read every chapter in scope in full.** Searches find candidates; reading finds problems. Never edit from search results alone.
 3. Keep a change list (chapter, old → new, why). Apply edits with exact-match replacement (each find string must occur exactly once in its file).
-4. **Fix vs. ask:** clear fixes (an ambiguous pronoun, a reader's clear comment, a typo) are applied and reported. Taste calls (cutting a line, rewording a joke) go to the author first as a numbered list, each with the quote, what's wrong and a proposed rewrite; apply only the ones picked, and don't raise a rejected item again. Close calls lean toward rewording (B11) unless the author has said otherwise.
+4. **Fix vs. ask:** clear fixes (an ambiguous pronoun, a reader's clear comment, a typo) are applied and reported. Taste calls (cutting a line, rewording a joke) go to the author first as a numbered list, each with the quote, what's wrong and a proposed rewrite; apply only the ones picked, and don't raise a rejected item again. Close calls lean toward rewording (the reword rule) unless the author has said otherwise.
 5. Save the change list to `manuscript/reports/<mode>-<chapters>-YYYY-MM-DD.md`; note the pass in each chapter's frontmatter `status`; add the report to `index.md`.
 6. **Beta copy:** if `beta.type` is `google-doc`, sync the changed approved chapters following `engine/beta-google-doc.md` ("Sync edits"). Do the Doc-to-book check first, so edits made in the Doc aren't overwritten.
 7. Commit `line-edit: <mode> <chapters>` (or `trim:`), log it.

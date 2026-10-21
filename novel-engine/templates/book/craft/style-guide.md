@@ -32,13 +32,13 @@ Sections A–C and E ship with the engine. They were learned the hard way while 
 6. **Dialogue does the work:** "said" for most tags; beats instead of tags where useful; exposition broken into real back-and-forth. Voices distinct by diction, image source and how they argue.
 7. **Introspection stays brief** (about a third of a scene at most), and ends in a decision or a shifted motive.
 8. **Action as mini-plot:** motive → objective → countable progress → payoff; keep geography clear.
-9. **Every pronoun has one obvious owner.** When two people of the same gender share a paragraph, use names. Re-name after the other person speaks or the subject changes. "It" points at the nearest noun: check what that noun is, or name the thing. Open every scene with a name, never "He", "She" or "It". Repeating a name is invisible to readers; confusion is not.
-10. **Every sentence belongs where it sits.** Each follows from the one before and leads to the next. Watch for an aside dropped between cause and effect, a reaction placed before what it reacts to, a sentence that contradicts its neighbor, a character re-described when the reader already has the description, and a detail that disagrees with the same moment in another chapter.
-11. **When in doubt, reword.** If a line edit is a close call, apply the reword and list it in the report.
-12. **No hints that never pay off.** Don't plant a small mysterious detail (an empty chair, an unexplained look) unless the book answers it soon or it is tied to a named later payoff.
-13. **Distinct voices.** Only characters whose personality is terseness speak tersely. Everyone else speaks in full sentences with their own texture (a detail, a reason, a bit of history or humor).
-14. **Write for the reader's English** (`dialect` in `book.yaml`). Setting words are fine when the reader can infer them from context; replace words the reader is likely to misread (court slang, regional household words, obsolete units) with plain ones.
-15. **Explain the core system to a lay reader at first use,** in a line or two of what the POV character feels or sees, and again briefly after a long gap.
+9. **The pronoun rule: every pronoun has one obvious owner.** When two people of the same gender share a paragraph, use names. Re-name after the other person speaks or the subject changes. "It" points at the nearest noun: check what that noun is, or name the thing. Open every scene (after a `* * *` or `---` break) with a name, never "He", "She" or "It". Repeating a name is invisible to readers; confusion is not.
+10. **The belonging rule: every sentence belongs where it sits.** Each follows from the one before and leads to the next. Watch for an aside dropped between cause and effect, a reaction placed before what it reacts to, a sentence that contradicts its neighbor, a character re-described when the reader already has the description, and a detail that disagrees with the same moment in another chapter.
+11. **The reword rule: when in doubt, reword.** If a line edit is a close call, apply the reword and list it in the report.
+12. **The payoff rule: no hints that never pay off.** Don't plant a small mysterious detail (an empty chair, an unexplained look) unless the book answers it soon or it is tied to a named later payoff.
+13. **The distinct-voices rule.** Only characters whose personality is terseness speak tersely. Everyone else speaks in full sentences with their own texture (a detail, a reason, a bit of history or humor).
+14. **The reader's-English rule: write for the reader's English** (`dialect` in `book.yaml`). Setting words are fine when the reader can infer them from context; replace words the reader is likely to misread (court slang, regional household words, obsolete units) with plain ones.
+15. **The lay-reader rule: explain the core system to a lay reader at first use,** in a line or two of what the POV character feels or sees, and again briefly after a long gap.
 
 ## C. Anti-slop rules (AI-specific)
 - Name every person and place deliberately; never accept a model-default name. See [[ai-prose-tells]].
@@ -59,7 +59,7 @@ Sections A–C and E ship with the engine. They were learned the hard way while 
 - [ ] Any infodump longer than three sentences? Any "as you know"?
 - [ ] Introspection brief, ending in a decision?
 - [ ] Ran the [[ai-prose-tells]] scan?
-- [ ] Pronoun pass (B9), belonging pass (B10), payoff check (B12), voice check (B13), reader's-English check (B14).
+- [ ] Pronoun pass, belonging pass, payoff check, voice check, reader's-English check (rules B9–B14).
 
 ## F. Genre promises
 (book-new fills this from the genre modules.)

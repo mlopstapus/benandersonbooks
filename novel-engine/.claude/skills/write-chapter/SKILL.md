@@ -24,6 +24,10 @@ Chapter N's brief is `manuscript/briefs/chNN-brief.md`; the chapter is `manuscri
 
 If N isn't given, use the lowest chapter that isn't `synced`; if all are synced, the next outline row.
 
+**Trust, but check, the stage.** If a chapter marked `synced` has no section in continuity.md's details ledger (or that section is marked pending), or the newest note in its `status` contradicts its `stage`, stop and ask the author which is true before going on. Write new `status` notes newest first. After a split, the new chapters may share the parent's brief; note that in each one's frontmatter (`brief: chNN-brief.md`).
+
+**Re-opening a finished chapter.** "Re-check chapter N" or new notes on a `synced` chapter: run the check stage (it has rules for synced chapters), and after the author approves the changes, run the approve stage again for any fact that changed.
+
 Before chapter N's brief, chapter N−1 should be `synced`. If it isn't, say so and offer to finish it first; the brief depends on canon being current.
 
 ## The two gates

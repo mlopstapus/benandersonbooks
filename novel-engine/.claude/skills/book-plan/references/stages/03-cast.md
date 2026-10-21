@@ -8,7 +8,7 @@ Use `templates/pages/character.md`. Work through:
 - Want, need, wound; why they can't have it yet; their personal connection to the plot.
 - **Arc from start to end**, matching the ending in the outline.
 - Backstory: locked facts only. **Name the off-page people who matter** (a dead spouse, a parent, a mentor). In *Ash of Verdance* one such character had no name until chapter 21, when the book's second-biggest scene needed one.
-- Voice: diction, where their images come from, how they argue, two or three sample lines. Decide who is terse and who isn't (style guide B13).
+- Voice: diction, where their images come from, how they argue, two or three sample lines. Decide who is terse and who isn't (the style guide's distinct-voices rule).
 - How they use or are affected by the core system.
 - **Knows / doesn't know** at the start: every secret in the book, from this character's side.
 - Relationships to the rest of the cast.

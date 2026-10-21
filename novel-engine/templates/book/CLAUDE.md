@@ -18,8 +18,8 @@ This folder is an LLM-maintained wiki for one work of fiction. The author curate
 raw/                    immutable source notes (craft research, AI-writing notes, research sources)
 craft/                  reader-taste.md, style-guide.md, scope.md, concept pages, ai-workflow/
 story/system/           the core system (magic, technology, the crime, the period) — how things ACTUALLY work
-story/research/         (historical) one cited page per topic; fact-vs-invention ledger
-story/world/            places, cultures, idioms-and-terms.md, sets.md, map
+story/research/         (historical books only) one cited page per topic; fact-vs-invention ledger
+story/world/            places, cultures, idioms-and-terms.md, sets.md (recurring locations), map
 story/characters/       one page per character, with "Knows / doesn't know"
 story/events/           history and timeline
 story/continuity.md     calendar, running counts, who-knows-what, observables, retrofit queue, details ledger
@@ -32,6 +32,14 @@ manuscript/reports/     continuity checks, line-edit and trim reports
 index.md                catalog of every page
 log.md                  append-only history
 ```
+
+## Cast map
+Which file holds which character (fill in as characters are added):
+| Character | File |
+|---|---|
+
+## Where things live
+- Calendar: `story/continuity.md` → Calendar (change this line if the book keeps it elsewhere).
 
 ## Book-specific rules
 Add standing rules the author states for this book here (they also go in `craft/style-guide.md` if they are prose rules).

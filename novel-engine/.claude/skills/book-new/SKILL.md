@@ -20,7 +20,7 @@ Run in order. Each stage has its own instructions in `references/stages/`; load 
 | 4 | Style guide and scope | `04-style-guide.md` | `craft/style-guide.md` (sections F, G, I), `craft/scope.md` | Author reviews |
 | 5 | Voice calibration | `05-calibration.md` | Style guide section H, taste page | Author picks each pair |
 
-How to tell where you are: stage 1 is done if `book.yaml` exists with a real title and genre; stage 2 if `craft/reader-taste.md` exists with `status: canon`; stage 3 if `craft/research-plan.md` has no unchecked items; stage 4 if style guide section G is filled; stage 5 if section H is filled.
+How to tell where you are (if the book already has an outline or chapters, treat book-new as done and point to `/book-next`): stage 1 is done if `book.yaml` exists with a real title and genre; stage 2 if `craft/reader-taste.md` exists with `status: canon`; stage 3 if `craft/research-plan.md` has no unchecked items; stage 4 if style guide section G is filled; stage 5 if section H is filled.
 
 ## Interviewing
 - Ask a few questions at a time (three to five), in rounds. Use multiple-choice questions where the answer is a choice; leave room for the author's own words.
