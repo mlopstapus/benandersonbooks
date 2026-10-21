@@ -73,8 +73,8 @@ footer .col{flex-direction:row;flex-wrap:wrap;gap:8px 24px;justify-content:space
 <li>Gaslamp fantasy</li><li>Murder mystery</li><li>Hard magic system</li><li>Flawed detective</li><li>Clean read</li><li>Standalone</li>
 </ul>
 <div class="ctas">
-<a class="btn primary" href="https://booksprout.co/reviewer/review-copy/view/330246/ash-of-verdance">Get a free advance copy</a>
-<a class="btn" href="https://www.amazon.com/s?k=Ash+of+Verdance+Ben+Anderson&amp;i=digital-text">Preorder on Amazon</a>
+<a class="btn primary" data-track="ARC click" href="https://booksprout.co/reviewer/review-copy/view/330246/ash-of-verdance">Get a free advance copy</a>
+<a class="btn" data-track="Amazon click" href="https://www.amazon.com/s?k=Ash+of+Verdance+Ben+Anderson&amp;i=digital-text">Preorder on Amazon</a>
 </div>
 <p class="avail">Kindle preorder open now. Paperback and hardcover on November 17, 2026.</p>
 </div>
@@ -130,13 +130,18 @@ footer .col{flex-direction:row;flex-wrap:wrap;gap:8px 24px;justify-content:space
 <footer class="wrap">
 <div class="col">
 <span>&copy; 2026 Ben Anderson</span>
-<a href="https://booksprout.co/reviewer/review-copy/view/330246/ash-of-verdance">Advance copies on Booksprout</a>
+<a data-track="ARC click" data-place="footer" href="https://booksprout.co/reviewer/review-copy/view/330246/ash-of-verdance">Advance copies on Booksprout</a>
 </div>
 </footer>
 
 <script>
+window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+</script>
+<script defer src="/_vercel/insights/script.js"></script>
+<script>
 (function(){var m=document.getElementById('map'),b=document.getElementById('mapbtn');
-b.addEventListener('click',function(){var o=m.classList.toggle('open');b.setAttribute('aria-expanded',String(o));b.textContent=o?'Close the map':'Open the full map';if(!o)m.scrollIntoView({block:'nearest'});});})();
+b.addEventListener('click',function(){var o=m.classList.toggle('open');b.setAttribute('aria-expanded',String(o));b.textContent=o?'Close the map':'Open the full map';if(o)window.va('event',{name:'Open map'});if(!o)m.scrollIntoView({block:'nearest'});});
+document.querySelectorAll('a[data-track]').forEach(function(a){a.addEventListener('click',function(){window.va('event',{name:a.getAttribute('data-track'),data:{place:a.getAttribute('data-place')||'hero'}});});});})();
 </script>
 </body>
 </html>
