@@ -12,7 +12,7 @@ The repo is the engine: skills, rules, templates. Books live in `books/<slug>/`,
 | Skill | When | Shape |
 |---|---|---|
 | `book-new` | Once | Interview: basics, taste, craft research, style guide, voice calibration |
-| `book-plan` | Once, then re-run by section | Interview: core system, spine, cast, world, rule lock, outline |
+| `book-plan` | Topical sessions, then re-run by section | Interview and riff sessions: series arc, core system, spine, cast, world and institutions, rule lock, outline |
 | `write-chapter` | Every chapter | Stage machine driven by the chapter's `stage` field, with two author gates |
 | `line-edit` | When feedback arrives / before release | Modes, each a separate pass across chapters |
 | `book-next` | Anytime | Status, next command, health check |
@@ -29,4 +29,4 @@ Every skill reads `book.yaml` (title, genre modules, length, POV, audience and d
 The skeleton (calendar, counts, antagonist plan, set pieces, who knows what, ending, sets) applies to all fiction. A module in `templates/genres/` adds reader promises, the core system and its spec questions, extra lock questions, story folders, research targets and chapter checks. A book has one primary module and any number of secondaries; unlisted genres get a custom module written into the book.
 
 ## Lessons encoded
-The default style guide ships with rules that were learned by fixing a finished book (pronoun ownership, sentence belonging, reword close calls, no hints that never pay off, distinct voices, the reader's English, lay-reader explanations). `book-plan`'s stage 5 asks the questions that, unasked, cost a week of retrofits. See comparison.md, section 2.
+Planning a trilogy (*Thornwake*) added the series layer, institution pages, the working-session rules and the token-saving wiki hygiene; see [lessons-thornwake.md](lessons-thornwake.md). The default style guide ships with rules that were learned by fixing a finished book (pronoun ownership, sentence belonging, reword close calls, no hints that never pay off, distinct voices, the reader's English, lay-reader explanations). `book-plan`'s stage 5 asks the questions that, unasked, cost a week of retrofits. See comparison.md, section 2.

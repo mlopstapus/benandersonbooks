@@ -22,9 +22,14 @@ The approved chapter, its brief, the check report, and the author's answers on p
 7. **Index:** add the chapter (and any new pages) to `index.md`.
 8. **Beta copy:** if `beta.type` is `google-doc`, append the chapter to the Doc following `engine/beta-google-doc.md` ("Append an approved chapter"), including verification. Batch any approved fixes to earlier chapters into the same sync.
 9. Set `stage: synced`. Commit `sync: chNN`. Log: `## [date] sync | ChNN: <facts added>, <pages touched>`.
+10. **Retro (after every chapter).** Go back through every note the author gave on this chapter: corrections, rewrites, pushback, lines they rewrote themselves. For each, name the root cause (an invented fact, a clarity miss, a missing reason, a staging error, a weak ending, a rule gap), and ask why the brief, the draft rules or the check didn't catch it first. Then propose, as a short numbered list:
+    - new or sharpened rules for the book's style guide (section I, with a self-check line in section E), and for the engine's template style guide (`templates/book/craft/style-guide.md`) if the lesson isn't specific to this book;
+    - changes to the skills (brief, draft, check, book-plan) so the catch happens earlier;
+    - a feedback memory for anything about how the author likes to work.
+    Apply what the author approves. Save the retro to `manuscript/reports/chNN-retro-YYYY-MM-DD.md`, commit `retro: chNN` in the book (engine changes are committed in the engine repo only when the author asks), and log it.
 
 ## Report
-A few lines: pages changed, map or sets updated, ripple effects that need a decision, the beta Doc updated (with its new version). Offer `/write-chapter N+1`.
+A few lines: pages changed, map or sets updated, ripple effects that need a decision, the beta Doc updated (with its new version), and the retro's proposals. Offer `/write-chapter N+1`.
 
 ## Rules
 - Only canonize what the author approved (explicitly, or by approving the chapter after seeing the new-facts list). Rejected facts get removed from the chapter too, unless the author says to keep the line.

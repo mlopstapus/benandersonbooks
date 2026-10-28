@@ -14,7 +14,7 @@ Find the latest phase that has started, then the first unfinished step inside it
 | Phase | Started when | Done when | Next |
 |---|---|---|---|
 | Setup | `book.yaml` exists | `craft/reader-taste.md` is canon and style guide sections F–H are filled | `/book-new` (resumes) |
-| Planning | `story/system/` or `outline.md` has content | outline has a chapter list and the calendar (continuity.md, or the page the book's `CLAUDE.md` names) has Day 0 | `/book-plan` |
+| Planning | `story/system/` or `outline.md` has content | outline has a chapter list and the calendar (continuity.md, or the page the book's `CLAUDE.md` names) has Day 0 | `/book-plan`, naming the stages still missing (book-plan's "how to tell where you are"), the open questions that block chapter 1, and for a series whether the series arc exists |
 | Drafting | any brief exists | every outlined chapter is `synced` | `/write-chapter N` for the lowest chapter not `synced` (say which stage it's at and what's waiting on the author) |
 | Revising | all chapters synced, or `phase: revising` | the author sets `phase: released` | `/line-edit` passes not yet in the log, in order: repeats → trim → pronoun and belonging → word sweep. If all are logged, say revision looks done and ask the author whether to set `phase: released` |
 | Released | `phase: released` | | No skill covers release (building ebook and print files, store listings). Offer a health check, or `/book-plan` for a sequel |

@@ -10,7 +10,7 @@ One command for the whole chapter loop. The chapter's `stage` field tells you wh
 Read `engine/conventions.md` first, then `book.yaml` and `CLAUDE.md` for the book.
 
 ## Find the stage
-Chapter N's brief is `manuscript/briefs/chNN-brief.md`; the chapter is `manuscript/chapters/chNN-<slug>.md`. (Zero-pad N to two digits.)
+Chapter N's brief is `manuscript/briefs/chNN-brief.md`; the chapter is `manuscript/chapters/chNN-<slug>.md`. (Zero-pad N to two digits.) A prelude or prologue is chapter 0 (`ch00`). Interludes are `iN` in the order they appear (`manuscript/briefs/i1-brief.md`, `manuscript/chapters/i1-<slug>.md`) and run through the same stages.
 
 | State on disk | Next stage | File |
 |---|---|---|

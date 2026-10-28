@@ -6,32 +6,48 @@ title: "Working Title"          # working title is fine; decided later
 slug: working-title              # folder name under books/
 author: ""
 
+series:                          # leave name null and of: 1 for a standalone
+  name: null                     # series name, if any (can stay TBD)
+  book: 1                        # which book this is
+  of: 1                          # how many books are planned (3 for a trilogy)
+  focus_rotation: false          # true if each book centers a different lead (Stormlight-style)
+
 genre:
   primary: fantasy               # a module in templates/genres/ (fantasy | mystery | historical), or custom
   secondary: []                  # e.g. [mystery]; secondaries add questions and checks
   custom_module: null            # path inside this book if book-plan wrote one, e.g. craft/genre-module.md
 
 form: novella                    # short-story | novella | novel
-target_words: 40000
+target_words: 40000              # or null for "as long as the story needs"; scope still estimates from the chapter plan
 chapter_words: 3500              # drafting target per chapter; drives planned splits
 chapters_planned: null           # set by book-plan
 
+structure:                       # book-plan stage 6 fills these
+  parts: []                      # named parts, e.g. ["Part One: The Lookout", ...]; empty if none
+  prelude: false                 # a prelude or prologue before chapter 1
+  interludes: false              # short chapters between parts from outside the main POVs
+  flashbacks: false              # flashback chapters (usually the focus lead's past)
+
 pov:
   person: third                  # first | third
-  mode: limited                  # limited | omniscient
-  characters: []                 # POV characters, primary first
+  mode: limited                  # limited (close) | omniscient
+  per_chapter: one               # one POV per chapter | mixed
+  characters: []                 # POV characters, primary first (page names or role names)
+  focus: null                    # this book's focus lead, if the series rotates focus
 tense: past
 
-audience: adult                  # adult | young-adult | middle-grade
+audience: adult                  # adult | young-adult | middle-grade (note crossover, e.g. "adult, suitable for teens")
 dialect: american                # american | british | other: the reader's English, not the setting's
 period_words: flavor-only        # flavor-only (setting words the reader can infer) | strict-period | modern
 
 content_lines:                   # hard rules from the taste interview
   - "example: no sex or nudity"
   - "example: violence allowed, no gore"
+  - "example: invented in-world oaths instead of real profanity"
 
-model_authors: []                # authors whose craft this book studies (book-new research)
+model_authors: []                # authors whose craft this book studies (book-new research and calibration)
 touchstones: []                  # books/films the author loves for this project
+off_limits: []                   # names, characters or plots from the author's earlier books not to reuse
 
 calendar:
   day0: null                     # e.g. "Friday, November 28"; book-plan locks this

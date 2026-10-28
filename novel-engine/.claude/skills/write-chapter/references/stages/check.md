@@ -11,7 +11,7 @@ Start a subagent that did **not** draft the chapter. It reports only and changes
 - From `story/continuity.md`: the current calendar, running counts, who knows what, observable effects, retrofit queue, and the details-ledger sections for the last five chapters.
 - The core-system page(s) in `story/system/`. For a mystery without a separate crime page, the outline's clue and payoff plan instead.
 - Canon pages for every on-stage character and location named in the brief (the book's `CLAUDE.md` cast map says which file is whose), and `story/world/sets.md` if it exists.
-- `craft/style-guide.md` and `book.yaml`, and the genre modules it names.
+- `craft/style-guide.md`, `craft/calibration.md` and `book.yaml`, and the genre modules it names. For a series, `manuscript/series-arc.md`.
 - Earlier reports for this chapter in `manuscript/reports/`, and decisions in `manuscript/decisions.md` that name it, so settled taste calls aren't raised again.
 - Then: grep every named person, place and number in the chapter across earlier chapters and canon, and check the hits.
 
@@ -22,10 +22,14 @@ Start a subagent that did **not** draft the chapter. It reports only and changes
 4. **POV and knowledge slips:** a character knowing or noticing what they couldn't; logistics like finding something "on the way" when already there.
 5. **Ambiguity:** sentences a reader could misread about who is present, who acts, whose thing it is, or which day is meant.
 6. **Repeats:** beats, images, lines or descriptions that echo earlier chapters, and recaps of what the reader already knows.
-7. **Pacing drift:** reveals, suspicion or clues arriving earlier than the outline allows; antagonist tells before the planned chapter.
+7. **Pacing drift:** reveals, suspicion or clues arriving earlier than the outline allows; antagonist tells before the planned chapter; for a series, anything that explains or reveals what the series arc saves for a later book.
 8. **Style-rule misses:** the style guide's self-check (section E), book-specific rules (section I), AI prose tells.
 9. **Genre checks:** every **Chapter checks** item from the genre modules in `book.yaml`.
 10. **Record drift:** the brief, continuity rows or canon pages that no longer match what the chapter says.
+11. **Choreography and physics:** step through every use of the core system against the rules, in order: who holds what, who touches whom, what triggers it, what it looks like. Flag any physical property of the system (color, temperature, glow, timing) not in canon.
+12. **Missing reasons:** for every reaction and every thing a character knows or acts on, quote where the reason is on the page, or flag it.
+13. **First-read clarity:** quote every line a reader would have to stop and decode (an abstraction for a concrete thing, a joke or simile that needs working out, a theory stated vaguely, an unmarked time jump).
+14. **Hook and last lines:** does the first paragraph carry the want and stakes? Does each scene's last line land? For an opening chapter or prelude, does it promise the scale of the book?
 
 **Severity:** *error* = a reader would notice something false or impossible (a contradiction, wrong person, broken rule). *Should fix* = a reader could stumble or misread. *Nit* = taste or polish; list sparingly.
 

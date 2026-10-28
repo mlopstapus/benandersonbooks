@@ -26,10 +26,12 @@ Every countable thing in the book, with its starting value and how it changes. U
 |---|---|---|---|---|
 
 ## Who knows what
-Matrix of main characters × secrets. Mark when each changes.
+Matrix of main characters × secrets at the start of the book. Mark the chapter where each cell changes. Put who else knows (a faction, an inner circle) in parentheses in the first column. For a series, the Reader column says when the reader learns it (chapter, or "book 2 climax").
 
 | Secret / fact | Character A | Character B | Reader |
 |---|---|---|---|
+
+Use this table to check scenes, not only facts: a scene where a character acts on, fights or hides from someone has to work with what each side knows.
 
 ## Observable effects
 What bystanders can see, hear or smell when the core system is used (and what they cannot). Nothing outside this list may appear on the page without the author's approval.

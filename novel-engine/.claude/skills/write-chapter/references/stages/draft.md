@@ -4,7 +4,7 @@ Run the drafting in a **subagent** when available, giving it the load list below
 
 ## Load
 - The approved brief.
-- `craft/style-guide.md` (all sections) and `craft/reader-taste.md`. The taste page wins on conflicts.
+- `craft/style-guide.md` (all sections), `craft/calibration.md` (the voice sample) and `craft/reader-taste.md`. The taste page wins on conflicts.
 - `story/continuity.md` (the sections the brief touches).
 - The previous chapter in full.
 - Canon pages for every character, place and rule in the brief.
@@ -17,6 +17,12 @@ Run the drafting in a **subagent** when available, giving it the load list below
 - Use the book's own verbs and terms for the core system; check idioms-and-terms before using any in-world word.
 - Explain the core system for a lay reader where the style guide's lay-reader rule says to.
 - Name people whenever it matters who is present (the pronoun rule). Open every scene with a name.
+- **Core-system physics come only from canon** (the canon-physics rule): no new color, glow, temperature, smell, timing or trigger for atmosphere.
+- **Stage every use of the core system in rule order** (the choreography rule): track who holds and touches what, and what triggers the moment.
+- **Every reaction and every piece of knowledge gets its reason on the page** (the reason rule).
+- **When characters argue or explain how something works, state each side in one plain sentence** (the plain-theory rule).
+- **Put the POV's want and stakes in the first paragraph; make each scene's last line land its point** (story rule A2, the last-line rule). Show damage happening to specific things (A5).
+- Prefer plain lines to clever ones: a joke or simile that needs decoding gets cut (the clarity rule).
 - After drafting, scan with `craft/ai-workflow/ai-prose-tells.md` and fix what it finds. Use it as a check, not as a prompt.
 
 ## Save

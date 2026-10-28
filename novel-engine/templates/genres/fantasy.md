@@ -17,6 +17,11 @@
 - How common is it? Is it legal? How do ordinary people regard users? What do they believe about it that isn't true?
 - What happens at the extremes: a user at full strength, a user out of fuel, two users against each other?
 - How does the antagonist's version differ, and what can they do that the hero can't (and vice versa)?
+- **What counters it?** Something ordinary that stops or weakens it (sunlight, fire, iron, water, a closed door). Counters make heists, guards and climaxes possible, so decide them before the set pieces.
+- **Where does the cost land on people who never used it?** A cost only the user pays stays abstract. The strongest systems also cost bystanders, the community or the future, and the POV can meet one of those people on the page.
+- **What is society taught about it, and what is a lie?** If someone powerful keeps a false belief alive, that lie is a plot engine: plan which scene cracks it.
+- **Can it end?** If the system can be cured, broken or used up, what would ending it cost? In a series this is often the final book's choice.
+- **The name:** check the system's name and its key terms against famous series in the genre (a mist, a shroud, a storm) and pick something that doesn't echo them.
 
 Lesson from *Ash of Verdance*: most mid-book rewrites came from these questions being answered one chapter at a time (healing, how long effects last, range, what another user senses, storage and carriers). Don't start chapter 1 with any of them open if the outline will need them.
 
@@ -25,13 +30,16 @@ Lesson from *Ash of Verdance*: most mid-book rewrites came from these questions 
 - Fuel and supply: how much the protagonist has at the start, where more comes from, and how much is left at each act break.
 - The words on the page: verbs for using the magic, the official name, the slang name, the slur. Ban the generic verbs (pull, push, channel) if the book has its own.
 - What the protagonist's community believes about magic (folk sayings, rhymes, taboos) vs. what is true.
-- History: the one or two past events (a war, a ban, a discovery) that explain how the world treats magic now.
+- History: the one or two past events (a war, a ban, a discovery, a cataclysm) that explain how the world treats magic now, and what part of that history is lost, hidden or survives only as legend.
+- **Security and heists:** for every way the plan breaks into, guards or escapes something, walk it through the rules (where a user arrives and returns, what bystanders see, what counters the magic). A proposal that a rule makes pointless is caught here, not in the draft.
+- **Getting stuck or lost:** if a user can be trapped, lost or cut off, what happens to them afterward, and can they be reached?
 
 ## Story folders
 - `story/system/` (the magic page)
 - `story/world/` (overview, places, idioms-and-terms, sets)
 - `story/mythology/` (what people believe, kept separate from how magic actually works)
 - `story/events/` (history and timeline)
+- `story/institutions/` if the world has guilds, houses, orders or factions that matter to the plot (a hub page plus one page per institution, from `templates/pages/institutions-hub.md` and `institution.md`)
 
 ## Research targets
 - The model authors' published talks, essays and interviews on worldbuilding and magic systems.
@@ -43,3 +51,4 @@ Lesson from *Ash of Verdance*: most mid-book rewrites came from these questions 
 - **New magic:** any capability not on the system page, especially in a climax or escape. Flag it as a proposal; never accept it silently.
 - **Lay-reader clarity:** would a first-time reader understand what just happened magically? (style guide B15)
 - **Belief vs. truth:** characters state folk beliefs as beliefs, not as narrator fact.
+- **Counters and costs:** counters (fire, light, doors) behave exactly as locked; the cost shows on the page where the outline says it should.

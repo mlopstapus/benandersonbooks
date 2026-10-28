@@ -12,13 +12,17 @@ updated: {{date}}
 
 **Job of the chapter:** the one thing that must be different by the end, and the lesson under it.
 
-**Threads advanced:** each thread letter, what moves, and running counts before → after (e.g. "C: doses 3 → 0").
+**Threads advanced:** each thread letter, what moves, and running counts before → after (e.g. "C: doses 3 → 0"). For a thread with a progress ladder in the outline, its state before → after (e.g. "glass: one pane → sealed case").
+
+**Flashback (if this is one):** the character's age and the date in the past, where it sits in their past (after the previous flashback), and the present-day beat it is placed to set up.
 
 **Opening want:** what the POV character wants on page one.
 
 **Beats (in order):** numbered. Each beat: place and time, what happens, what is said in substance, why it happens (motive), and the rule or earlier chapter it relies on. When a beat answers a question the author settled, note it: "(author, YYYY-MM-DD)".
 
-**Ending image / hook:**
+**Ending image / hook:** how the chapter ends (a turn, a question, a cut-away), from the outline's chapter beats.
+
+**Plants and payoffs:** every clue, setup or preparation planted here and every one paid off, matching rows in the outline's clue and payoff table (and, for a series, the series arc). If the POV character is hiding a plan, where the scene cuts away and what preparation the careful reader can see.
 
 **Who knows what at the end:** one line per main character, including offstage characters.
 
