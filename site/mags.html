@@ -32,11 +32,15 @@ h1{font-family:var(--display);font-weight:600;font-size:clamp(36px,7vw,54px);lin
 .meta{font-size:16px;color:var(--muted);margin:16px 0 0}
 article{padding-block:48px 24px}
 article p{margin:0 0 1.05em;text-indent:1.4em}
-article p:first-child,article .brk+p{text-indent:0}
-article p:first-child::first-letter{font-family:var(--display);float:left;font-size:3.3em;line-height:.9;padding:.06em .1em 0 0;color:var(--lamp)}
+#teaser p:first-child,article .brk+p{text-indent:0}
+#teaser p:first-child::first-letter{font-family:var(--display);float:left;font-size:3.3em;line-height:.9;padding:.06em .1em 0 0;color:var(--lamp)}
 .brk{text-align:center;text-indent:0!important;color:var(--muted);margin:1.6em 0!important;font-size:22px}
 .gate{position:relative;margin:8px 0 48px}
-.fade{height:120px;margin-top:-120px;position:relative;background:linear-gradient(to bottom,rgba(14,22,21,0),var(--night));pointer-events:none}
+#teaser{position:relative}
+body:not(.unlocked) #teaser{-webkit-mask-image:linear-gradient(to bottom,#000 calc(100% - 340px),rgba(0,0,0,.08));mask-image:linear-gradient(to bottom,#000 calc(100% - 340px),rgba(0,0,0,.08))}
+body:not(.unlocked) #teaser p:nth-last-child(2){filter:blur(1px)}
+body:not(.unlocked) #teaser p:last-child{filter:blur(2.5px);user-select:none}
+#teaser p{transition:filter .6s ease}
 .box{border:1px solid var(--line);background:var(--hero);border-radius:4px;padding:32px 28px;text-align:center}
 .box h2{font-family:var(--display);font-weight:500;font-size:22px;letter-spacing:.1em;text-transform:uppercase;margin:0 0 10px}
 .box p{margin:0 0 20px;color:var(--fg)}
@@ -79,6 +83,7 @@ footer .col{flex-direction:row;flex-wrap:wrap;gap:8px 24px;justify-content:space
 <main class="wrap">
 <div class="col">
 <article id="story">
+<div id="teaser">
 <p>Margery Pell had the shutters up and the day's few coins counted into stacks when the bell over the door went, and she knew what he was before he'd got the door shut behind him.</p>
 <p>It wasn't the look of him, though the look of him was bad enough. He was tall and too thin for it. Rain ran off the brim of a cheap hat and dripped from the hem of a gray army greatcoat with brass buttons and the cuffs turned back the regiment's way. Twenty-two, perhaps. His face was the color of a tallow candle. Both hands were jammed in his pockets, his shoulders were up around his ears, and a slow, deep tremble went all through him that had nothing to do with the rain.</p>
 <p>What told her was the way he looked at the room. He didn't look at her, or the counter, or the cases of rings and watches. He looked past them, at the walls, as if he were listening for something on the other side of the brick and couldn't hear it anymore.</p>
@@ -90,6 +95,7 @@ footer .col{flex-direction:row;flex-wrap:wrap;gap:8px 24px;justify-content:space
 <p>Mags reached under the counter for her pipe. She didn't light it. She only held it, and turned it over, and ran the stumps of her two missing fingers along the smooth wood of the bowl.</p>
 <p><em>The corporal had it.</em> Of course he had. There was always a corporal, and there'd always be a corporal, Pact or no Pact, for as long as armies stood night watches and young men fell asleep on walls.</p>
 <p>"Sit down before you fall down," she said, and pushed the stool out from behind the counter with her foot. "And take off that hat. You're making a lake."</p>
+</div>
 <div id="rest" hidden>
 <p class="brk" aria-hidden="true">&#10086;</p>
 <p>The army had never known what to do with the green lads, so in the last year of the war it had given them to Margery Pell.</p>
@@ -258,7 +264,6 @@ footer .col{flex-direction:row;flex-wrap:wrap;gap:8px 24px;justify-content:space
 </article>
 
 <div class="gate" id="gate">
-<div class="fade"></div>
 <div class="box">
 <h2>Keep reading</h2>
 <p>Please enter your email for updates on the next book, and the rest of the story will open right here.</p>
@@ -305,7 +310,7 @@ window.va = window.va || function () { (window.vaq = window.vaq || []).push(argu
   var form=document.getElementById('signup'),email=document.getElementById('email'),err=document.getElementById('err'),go=document.getElementById('go');
 
   function unlock(scroll){
-    rest.hidden=false;end.hidden=false;gate.hidden=true;
+    document.body.classList.add('unlocked');rest.hidden=false;end.hidden=false;gate.hidden=true;
     try{localStorage.setItem(KEY,'1');}catch(e){}
     if(scroll){var b=rest.querySelector('.brk');if(b)b.scrollIntoView({behavior:'smooth',block:'start'});}
   }

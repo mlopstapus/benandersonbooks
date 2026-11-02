@@ -54,6 +54,14 @@ section p{margin:0}
 .details{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 32px}
 .details div{display:flex;flex-direction:column;gap:2px}
 .details span:first-child{font-family:var(--display);font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.next{background:var(--hero)}
+.next .label{font-family:var(--display);font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin:0}
+.next h2{margin:0}
+.next .status{font-style:italic;color:var(--lamp);margin:0}
+.signup{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+.signup input{flex:1 1 240px;min-width:0;min-height:48px;padding:0 16px;font:inherit;font-size:18px;color:var(--fg);background:#0b1211;border:1px solid var(--line);border-radius:3px}
+.signup input:focus{outline:2px solid var(--lamp);outline-offset:1px;border-color:transparent}
+.signup-msg{font-size:16px;color:var(--muted);margin:0;min-height:1em}
 footer{border-top:1px solid var(--line);padding-block:32px 48px;color:var(--muted);font-size:15px}
 footer .col{flex-direction:row;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
 @media (max-width:640px){header{padding-block:40px 56px}.cover{width:260px}.details{grid-template-columns:1fr}}
@@ -118,11 +126,25 @@ footer .col{flex-direction:row;flex-wrap:wrap;gap:8px 24px;justify-content:space
 <div class="details">
 <div><span>Release</span><span>November 17, 2026</span></div>
 <div><span>Kindle</span><span>$3.99, and free in Kindle Unlimited</span></div>
-<div><span>Paperback</span><span>$14.99, 408 pages, ISBN 979-8-16-371497-1</span></div>
+<div><span>Paperback</span><span>$14.99, 409 pages, ISBN 979-8-16-371497-1</span></div>
 <div><span>Hardcover</span><span>$22.99</span></div>
 <div><span>Genre</span><span>Gaslamp fantasy mystery, standalone</span></div>
 <div><span>Content</span><span>Clean read. No profanity and no sexual content.</span></div>
 </div>
+</div>
+</section>
+<section class="wrap next" id="next">
+<div class="col">
+<p class="label">Coming early 2027</p>
+<h2>Codename: Thornwake</h2>
+<p class="status">Book one of a new clean fantasy trilogy, being written now. The real title is still to come.</p>
+<p>Every night the mist rises from the cracks in the earth, and thieves like Dane walk into the past to rob it. Whatever they take is gone for good, even from memory. Dane is the best there is, and the only thing he has ever wanted back is his crew, stranded inside a memory since the night he let them go. The one object that can take him back is something the historians swear doesn't exist.</p>
+<p>If you'd like to hear when it's ready, please enter your email for updates on the next book.</p>
+<form class="signup" id="nextsignup" novalidate>
+<input id="nextemail" type="email" autocomplete="email" inputmode="email" placeholder="you@example.com" aria-label="Email address" required>
+<button class="btn primary" type="submit" id="nextgo">Get updates</button>
+</form>
+<p class="signup-msg" id="nextmsg" role="status"></p>
 </div>
 </section>
 </main>
@@ -143,6 +165,11 @@ window.va = window.va || function () { (window.vaq = window.vaq || []).push(argu
 (function(){var m=document.getElementById('map'),b=document.getElementById('mapbtn');
 b.addEventListener('click',function(){var o=m.classList.toggle('open');b.setAttribute('aria-expanded',String(o));b.textContent=o?'Close the map':'Open the full map';if(o)window.va('event',{name:'Open map'});if(!o)m.scrollIntoView({block:'nearest'});});
 document.querySelectorAll('a[data-track]').forEach(function(a){a.addEventListener('click',function(){window.va('event',{name:a.getAttribute('data-track'),data:{place:a.getAttribute('data-place')||'hero'}});});});})();
+(function(){var f=document.getElementById('nextsignup');if(!f)return;var e=document.getElementById('nextemail'),m=document.getElementById('nextmsg'),b=document.getElementById('nextgo');
+f.addEventListener('submit',function(ev){ev.preventDefault();var v=e.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){m.textContent='Please enter a valid email address.';e.focus();return;}
+b.disabled=true;var fd=new FormData();fd.append('fields[email]',v);fd.append('ml-submit','1');fd.append('anticsrf','true');
+var done=false;function fin(){if(done)return;done=true;window.va('event',{name:'Next book signup'});f.hidden=true;m.textContent="Thanks! Check your inbox for a confirmation email. While you wait, Just a Sergeant, a short story about Mags, is free to read at benandersonbooks.com/mags.";}
+fetch('https://assets.mailerlite.com/jsonp/2762388/forms/203033215632410455/subscribe',{method:'POST',body:fd,mode:'no-cors'}).then(fin,fin);setTimeout(fin,4000);});})();
 </script>
 </body>
 </html>
