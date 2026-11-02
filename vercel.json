@@ -2,5 +2,17 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "buildCommand": "",
   "outputDirectory": "site",
-  "cleanUrls": true
+  "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/review",
+      "destination": "https://www.amazon.com/review/create-review?asin=B0HNTT3ZSR",
+      "permanent": false
+    },
+    {
+      "source": "/mags",
+      "destination": "/",
+      "permanent": false
+    }
+  ]
 }
