@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Just a Sergeant | Ben Anderson</title>
+<meta name="description" content="Just a Sergeant, a short story set in the world of Ash of Verdance. Mags, the Leaf War, and the night a young soldier walked into Pell's Loans.">
+<meta property="og:title" content="Just a Sergeant, a story from the world of Ash of Verdance">
+<meta property="og:description" content="Eighteen years before Ash of Verdance, a shaking young soldier walked into Pell's Loans asking for a leaf he couldn't name.">
+<meta property="og:image" content="cover.jpg">
+<meta name="robots" content="noindex">
+<link rel="icon" href="cover.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap">
+<style>
+:root{--night:#0e1615;--hero:#121d1c;--line:#283734;--fg:#e7e4da;--muted:#a2aba5;--lamp:#e3a74f;--lamp-hi:#f0bb68;--ink:#1a1206;--field:#0b1211;
+--display:"Cinzel",Georgia,serif;--body:"EB Garamond",Garamond,Georgia,serif;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--night);color:var(--fg);font-family:var(--body);font-size:20px;line-height:1.65}
+a{color:var(--lamp)}a:hover{color:var(--lamp-hi)}
+.wrap{padding-left:max(20px,env(safe-area-inset-left));padding-right:max(20px,env(safe-area-inset-right))}
+.top{border-bottom:1px solid var(--line);padding-block:14px}
+.top .col{flex-direction:row;justify-content:space-between;align-items:center;gap:12px}
+.top a{font-family:var(--display);font-size:13px;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;color:var(--muted)}
+.top a:hover{color:var(--fg)}
+.col{max-width:660px;margin:0 auto;display:flex;flex-direction:column}
+header.intro{background:var(--hero);border-bottom:1px solid var(--line);padding-block:56px 48px;text-align:center}
+.kicker{font-family:var(--display);font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin:0 0 14px}
+h1{font-family:var(--display);font-weight:600;font-size:clamp(36px,7vw,54px);line-height:1.05;letter-spacing:.04em;margin:0}
+.dek{font-style:italic;font-size:22px;line-height:1.4;color:var(--lamp);margin:18px auto 0;max-width:34ch}
+.meta{font-size:16px;color:var(--muted);margin:16px 0 0}
+article{padding-block:48px 24px}
+article p{margin:0 0 1.05em;text-indent:1.4em}
+article p:first-child,article .brk+p{text-indent:0}
+article p:first-child::first-letter{font-family:var(--display);float:left;font-size:3.3em;line-height:.9;padding:.06em .1em 0 0;color:var(--lamp)}
+.brk{text-align:center;text-indent:0!important;color:var(--muted);margin:1.6em 0!important;font-size:22px}
+.gate{position:relative;margin:8px 0 48px}
+.fade{height:120px;margin-top:-120px;position:relative;background:linear-gradient(to bottom,rgba(14,22,21,0),var(--night));pointer-events:none}
+.box{border:1px solid var(--line);background:var(--hero);border-radius:4px;padding:32px 28px;text-align:center}
+.box h2{font-family:var(--display);font-weight:500;font-size:22px;letter-spacing:.1em;text-transform:uppercase;margin:0 0 10px}
+.box p{margin:0 0 20px;color:var(--fg)}
+form{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+input[type=email]{flex:1 1 240px;min-width:0;min-height:50px;padding:0 16px;font:inherit;font-size:18px;color:var(--fg);background:var(--field);border:1px solid var(--line);border-radius:3px}
+input[type=email]:focus{outline:2px solid var(--lamp);outline-offset:1px;border-color:transparent}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 24px;border-radius:3px;font-family:var(--display);font-size:14px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;cursor:pointer;border:1px solid var(--lamp);background:var(--lamp);color:var(--ink)}
+.btn:hover{background:var(--lamp-hi);color:var(--ink)}
+.btn:disabled{opacity:.6;cursor:wait}
+.btn.ghost{background:transparent;color:var(--lamp)}
+.btn.ghost:hover{background:transparent;color:var(--lamp-hi)}
+.btn:focus-visible{outline:2px solid var(--fg);outline-offset:3px}
+.fine{font-size:15px;color:var(--muted);margin:14px 0 0!important}
+.err{color:#f0a08a;font-size:16px;margin:10px 0 0!important;min-height:1em}
+.end{border-top:1px solid var(--line);padding-block:48px 64px;text-align:center}
+.end .col{gap:16px;align-items:center}
+.end h2{font-family:var(--display);font-weight:500;font-size:22px;letter-spacing:.1em;text-transform:uppercase;margin:0}
+.end p{margin:0;max-width:44ch}
+.ctas{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:6px}
+.thanks{font-style:italic;color:var(--muted)}
+[hidden]{display:none!important}
+footer{border-top:1px solid var(--line);padding-block:28px 44px;color:var(--muted);font-size:15px}
+footer .col{flex-direction:row;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
+@media (max-width:640px){body{font-size:19px}header.intro{padding-block:40px 36px}.box{padding:26px 18px}}
+</style>
+</head>
+<body>
+
+<nav class="top wrap"><div class="col"><a href="/">Ash of Verdance</a><a href="/">Ben Anderson</a></div></nav>
+
+<header class="intro wrap">
+<div class="col">
+<p class="kicker">A story from the world of Ash of Verdance</p>
+<h1>Just a Sergeant</h1>
+<p class="dek">Eighteen years before Gideon took the case, a shaking young soldier walked into Pell's Loans asking for a leaf he couldn't name.</p>
+<p class="meta">A short story, about 23 minutes</p>
+</div>
+</header>
+
+<main class="wrap">
+<div class="col">
+<article id="story">
+<p>Margery Pell had the shutters up and the day's few coins counted into stacks when the bell over the door went, and she knew what he was before he'd got the door shut behind him.</p>
+<p>It wasn't the look of him, though the look of him was bad enough. He was tall and too thin for it. Rain ran off the brim of a cheap hat and dripped from the hem of a gray army greatcoat with brass buttons and the cuffs turned back the regiment's way. Twenty-two, perhaps. His face was the color of a tallow candle. Both hands were jammed in his pockets, his shoulders were up around his ears, and a slow, deep tremble went all through him that had nothing to do with the rain.</p>
+<p>What told her was the way he looked at the room. He didn't look at her, or the counter, or the cases of rings and watches. He looked past them, at the walls, as if he were listening for something on the other side of the brick and couldn't hear it anymore.</p>
+<p>Mags had seen that look in the dressing station after the war.</p>
+<p>"We're shut," she said.</p>
+<p>"Sorry." He didn't move. Water dripped off him onto her boards. "A man on the wharf said you might help me. He said you'd been in the army."</p>
+<p>"A lot of people have been in the army."</p>
+<p>"He said you'd know." The young man took one hand out of his pocket, looked at it as though it belonged to somebody else, and put it back. "There's a thing they gave us on the night watch. A leaf. Dry, green, and you chew it. I don't know what it's called. I never knew where it came from. The corporal had it." He swallowed. "I've been out of the army three weeks, and the corporal's a long way off."</p>
+<p>Mags reached under the counter for her pipe. She didn't light it. She only held it, and turned it over, and ran the stumps of her two missing fingers along the smooth wood of the bowl.</p>
+<p><em>The corporal had it.</em> Of course he had. There was always a corporal, and there'd always be a corporal, Pact or no Pact, for as long as armies stood night watches and young men fell asleep on walls.</p>
+<p>"Sit down before you fall down," she said, and pushed the stool out from behind the counter with her foot. "And take off that hat. You're making a lake."</p>
+<div id="rest" hidden>
+<p class="brk" aria-hidden="true">&#10086;</p>
+<p>The army had never known what to do with the green lads, so in the last year of the war it had given them to Margery Pell.</p>
+<p>She'd been a sergeant for six years by then, a plain one, the kind who knew where the water came from and how many boots were wanted and which corporal was stealing the rum. She wasn't Awakened. She'd chewed the leaf on night watch like everybody did, and it had done to her what it did to most people: kept her eyes open, set her heart galloping, and sent her up the trench at dawn to be sick behind the latrines. She had never felt a single thing she couldn't see.</p>
+<p>The nine she was given felt everything.</p>
+<p>There was Walt Kirk, who was older than she was and claimed to have been a poacher, and who could tell you, in the pitch black, how many rabbits were in a field and which one was lame. There was Owen Brack, a farrier's son as big as a door, who never said a word he didn't need. There was Ned Corley, eighteen and looked twelve, who on a fresh pinch could feel a life a quarter of a mile off and tell a man from a horse at half that. There were the Vane brothers, Tommy and Will, who argued about everything. There were four more, good lads all of them, and Mags had their names written inside the lid of the box she kept the leaf in, because the box was the only thing she was sure she'd never lose.</p>
+<p>The leaf came up in sacks. She doled it out by the pinch, from a tin box with a padlock, morning and afternoon and a double before anything bad, and she wrote every pinch in a book. She'd learned quickly that you didn't let a green lad keep his own leaf. You didn't let him run short, either. Running short was worse.</p>
+<p>"You're our nanny, Sergeant," Walt Kirk said, the first week, grinning.</p>
+<p>"I'm your sergeant," Mags said. "Your nanny would've given up on you."</p>
+<p>They held the line along a ridge of chalk and brambles that winter, with the other side's trenches four hundred yards off across a stretch of ground nobody could cross in daylight and live. Night was when things happened. Night was when the green lads earned their leaf.</p>
+<p>She stood with Ned Corley on the fire step one January night, with frost on the sandbags and no moon at all, and watched him go still.</p>
+<p>"Sarge," Ned said. His breath smoked. "They're coming over."</p>
+<p>"How many?"</p>
+<p>He was quiet a moment, with his eyes shut. "Twenty. Twenty-two. Moving slowly, out past the second wire."</p>
+<p>"Have they got any of ours that are theirs with them?"</p>
+<p>That was how the green lads talked about the other side's Awakened: <em>ours that are theirs.</em> Mags had stopped trying to make them say it any other way.</p>
+<p>"Can't tell, Sarge. A life's a life." Ned opened his eyes. "We'll know if one of them drinks. And they'll know if we do."</p>
+<p>"Then don't drink."</p>
+<p>She sent a runner along the trench and got the company stood to without a light or a word, and when the raiders came over the parapet thirty minutes later the whole line was waiting for them with bayonets fixed. It was short and loud and ugly in the dark, and Mags fired her rifle at shapes and couldn't have said if she hit any. Somewhere to her left, she heard Owen Brack make a sound like a man lifting something heavy, and a body went back over the parapet as if it had been thrown from a cart.</p>
+<p>Afterward, along the top of the sandbags where Owen had been standing, the frost-burned grass that grew between the bags had gone gray, a long smear of it, like ash on a hearth. The bramble behind him was gray too. Owen stood with his hands hanging at his sides and the green coming up at the corners of his mouth, and he was shivering as though somebody had poured cold water down his back.</p>
+<p>"Couldn't help it, Sarge," he said. "One of theirs had Will by the throat."</p>
+<p>"I know." Mags gave him her own scarf. "Go and get warm."</p>
+<p>The drunk strength had gone out of him inside a minute, the way it always did. The gray in the grass stayed till spring.</p>
+<p class="brk" aria-hidden="true">&#10086;</p>
+<p>She learned the rest of it the way you learn anything in a war, by seeing it happen and deciding what to do about it afterward.</p>
+<p>She learned that Owen could lift a fallen roof beam off a trapped man after drinking from the apple tree beside the house. She saw him put his bare palm to the trunk, saw the leaves curl above him, and then watched him shoulder a weight the rest of them couldn't shift. She learned, too, that darkness hid nothing from the life sense. If her lads could feel men moving beyond the wire, the other side's Awakened could feel them moving just as well.</p>
+<p>And toward the end, in that last spring, she learned about the dying.</p>
+<p>The wounded who weren't going to last were laid out at night along the reserve trench, under blankets, waiting for carts that came when they came. Some nights a few of the green lads would crawl down there, the ones with a bit of iron in them or a fever coming on, and sit with the dying and hold their hands. Nobody minded. The company thought it was kindness.</p>
+<p>Then Mags noticed that the ones they sat with never lasted till morning, not one, and that her lads were up and fighting by dawn.</p>
+<p>Walt Kirk had taken a bit of shell in the shoulder in March. It wasn't much, but it went bad, and he was hot and gray with fever and talking nonsense when Mags looked in on him at dusk. At midnight she went to look again and found his cot empty.</p>
+<p>She found him down the reserve trench, sitting on an ammunition box beside a boy from the Fourth whose legs were gone, holding the boy's hand in both of his.</p>
+<p>Mags stopped where she was.</p>
+<p>Walt didn't look up. The boy from the Fourth was asleep, or near enough. His breathing was slow and light and had long gaps in it. After a while the gaps got longer, and then there weren't any more breaths to have gaps between. Walt sat a moment longer. Then he laid the hand down on the blanket and closed the boy's eyes with two fingers.</p>
+<p>When Walt stood up he didn't sway. When he turned around in the lantern light, his face had color in it, and there was green at the corners of his mouth.</p>
+<p>"He was going, Sarge," Walt said quietly. "He was going anyway. You could feel it. He was halfway out the door."</p>
+<p>Mags looked at the boy from the Fourth. She looked at Walt, who had been gray with fever three hours before and was standing straight now with his bandage loose on his shoulder. Under that bandage, she knew without looking, the wound would be closed and clean.</p>
+<p>She knew what she ought to do. There was a word for it in the regulations, and the word was <em>murder</em>, and they'd hang him for it.</p>
+<p>There'd be fewer of her lads by summer, whatever she did.</p>
+<p>"Go to bed, Walt," she said. "And keep your shirt on over that shoulder. The surgeon's not to see it."</p>
+<p>She never watched again, and she never stopped them. She knew when it had happened by who was up at dawn, and by the blankets drawn up over faces along the reserve trench that hadn't been drawn up at dusk. By then the company had noticed too, and nobody said anything. They had all seen the green lads stop a raid in the dark. They were glad of them.</p>
+<p><em>We were at war,</em> she would tell herself later, a great many times. <em>We let them.</em></p>
+<p class="brk" aria-hidden="true">&#10086;</p>
+<p>The order to hold the sunken lane came in May, two days before the end, though none of them knew it was the end.</p>
+<p>The lane ran between two high hedges of hawthorn and holly, deep as a ditch, down to a farm whose buildings had been shelled into heaps. Mags's lads and two platoons of the company went down it at dusk, to hold the farm against a push everyone said was coming.</p>
+<p>Ned Corley felt it first. He stopped dead in the lane with his hand up, and his face went white under the dirt.</p>
+<p>"Sarge. They're drinking."</p>
+<p>"Where?"</p>
+<p>"The hedge." He turned his head, slowly, the way a dog turns toward a sound. "Both hedges. They're coming down the hedges from the far end. I can feel them flaring. It's—" He swallowed. "There's a lot of them, Sarge. More than us."</p>
+<p>Then Mags saw it. Some nights, twelve years on, she still did.</p>
+<p>At the far end of the lane, two hundred yards off, the hawthorn was going gray. The color drained out of it the way color drains out of a dying man's face: green, then the green of a bruise, then gray, a gray that ran along the hedge toward them like a fuse burning down. Leaves curled. A squirrel dropped out of the holly and lay in the road. The gray came down both hedges at once, faster than a man could walk, and Mags understood that somewhere behind that gray, more of the other side's Awakened than she had in her whole company stood with their bare hands on the hawthorn, drinking it all, every leaf and root and nesting bird of it, so that they'd come into the lane stronger than anything on two legs had a right to be.</p>
+<p>"Get ready," she said. "All of you. Now."</p>
+<p>Her nine put their hands on the hedges.</p>
+<p>What happened next happened fast, and afterward she remembered it in pieces.</p>
+<p>She remembered Owen Brack taking a man by the coat and throwing him over the hedge. The Vane brothers fought back to back, the way they argued. Then the other side's riflemen came behind their Awakened, and the lane was full of smoke and noise, and the gray in the hedges met the gray from her own lads' hands until the whole lane was dead, every leaf, both sides, and there was nothing left in it to drink but the men.</p>
+<p>Tommy Vane went down with a bayonet in him, and she saw Will Vane's face.</p>
+<p>Walt Kirk stood over Ned, who'd been knocked flat by a shell that had thrown iron through the hedge, and Walt shouted at her to get the boy out, and then Walt wasn't standing anymore.</p>
+<p>She remembered getting her right hand into Ned's collar and dragging him backward up the lane on his heels, and her rifle in her left hand, and turning to fire it one-handed at a shape in the smoke, and the flash of a shot from somewhere she never saw.</p>
+<p>The ball took the last two fingers of her left hand off at the knuckle. It knocked the rifle out of her grip and spun her halfway round, and she looked down and saw that her hand was wrong and red, and that she still had hold of Ned's collar with the other one. She didn't feel a thing for nearly a minute. She kept dragging. By the time it began to hurt, she was out at the top of the lane, and Owen was beside her with a hole in his thigh, carrying Will Vane over one shoulder, and there were men from the company all around them, and somebody was wrapping her hand in a field dressing so tight her eyes watered.</p>
+<p>Six of her nine died in the sunken lane. Will Vane died on the cart.</p>
+<p>They didn't hold the farm.</p>
+<p class="brk" aria-hidden="true">&#10086;</p>
+<p>Mags woke on the second morning in the dressing station, with her hand throbbing like a second heart, to the sound of cheering.</p>
+<p>The war was over. The governments had met and signed something in a city none of them had ever seen, and the something was called the Pact, and the guns had stopped at dawn. Men were throwing their caps in the air outside. Somebody had found a fiddle.</p>
+<p>Mags got up, which took some doing, and went to find her lads.</p>
+<p>The lieutenant found her first. He had her padlocked box under his arm.</p>
+<p>"Sergeant," he said. He was a decent young man, and he couldn't look at her. "You've heard."</p>
+<p>"I've heard the war's over, sir."</p>
+<p>"There's more to it." He held up the box. "The leaf's in the Pact. Every nation that's signed it has agreed to outlaw the stuff. Every leaf of it, everywhere. Possession, sale, growing, all of it. The army's to hand in every pinch it holds by noon today, and it's to be burned." He cleared his throat. "All of it, Sergeant. I'm to see to yours personally."</p>
+<p>Mags looked at the box. She thought of the names written inside the lid.</p>
+<p>"Sir," she said, "I've two lads in this station with holes in them. Owen Brack and Ned Corley. They've had nothing since the lane. Give them enough leaf and they'd be on their feet by tomorrow. You've seen it done."</p>
+<p>"I have." The lieutenant looked at the floor. "And now it's a crime, Sergeant. It's been a crime since dawn. I'm sorry."</p>
+<p>He took the box away. She watched it go into the fire behind the cookhouse with everybody else's, and the smoke that came off it was green-gray and smelled of sage and hay, and the men cheering the end of the war never even looked round.</p>
+<p class="brk" aria-hidden="true">&#10086;</p>
+<p>Mags went with the worst of the wounded to the army hospital at Ashcombe, by cart and then by river barge. They arrived four days after the fight in the lane. Nobody had any other use for her, and she wasn't leaving Owen and Ned.</p>
+<p>The hospital stood on the north side of the city, a long gray building with a garden behind it. When Mags first looked out from Ned's upstairs window, the Downs were already burning. Fire ran through whole hillsides of hollow sage beyond the chimneys. Above it, toward the hilltops, the last silver-green fields moved in the wind. Mags hadn't known there was so much of it in the world.</p>
+<p>By noon the fire had climbed halfway to the tops. The smoke stood up over the Downs in a wall and then leaned south on the wind, over the city. For three days Ashcombe smelled of burning hay, and ash came down in the streets like dirty snow.</p>
+<p>The walking wounded crowded the windows to watch. Somebody said it was a fine sight. Somebody said good riddance.</p>
+<p>Mags stood at the glass with her bandaged hand against her chest and watched the fields burn.</p>
+<p>On the nearest slope, under the wall of smoke, something was moving. It was too far off to be more than a speck, but it was a man. He was running along the edge of the fire, back and forth, beating at the burning sage with something, a coat or a sack. He went down, and got up, and went at it again. Even from the hospital she could see it was hopeless. He was one small dark thing against a hill of fire.</p>
+<p>"Look at that fool," said a corporal with his arm in a sling.</p>
+<p>"Leave him be," Mags said.</p>
+<p>The corporal looked at her, and then he looked at her hand, and he didn't say anything else.</p>
+<p>Behind her, in the bed, Ned Corley lay watching the ceiling. He'd gone into the black on the second day after the lane, after missing his morning and afternoon leaf. His muscles had locked, and his sight had gone out at the edges and then altogether. For two days he hadn't been able to unclench his own jaw. That morning he'd opened his eyes and asked for water. He could move again. But he was hot, and getting hotter, and when the orderlies changed the dressing on his side, they held their breath.</p>
+<p>Owen Brack was in the next bed but one. The surgeon had been to look at his leg twice.</p>
+<p class="brk" aria-hidden="true">&#10086;</p>
+<p>"It's gone bad," Owen said, on the fourteenth day after the fight. "The leg. He wants it off tomorrow."</p>
+<p>Mags sat on the end of his bed. She'd been told to go home a dozen times. She had nowhere in particular to go.</p>
+<p>Owen was gray with fever, gray as the hawthorn in the lane. Under the blanket, his thigh was swollen and black at the edges of the bandage, and the smell of it was one she knew from the reserve trench, sweet and wrong.</p>
+<p>"Ned's worse," Owen said.</p>
+<p>"I know."</p>
+<p>"Some leaf, Sarge." He said it very low, so the orderly wouldn't hear. "Enough to wake us, and something to drink from, and we'd be mended by morning, the pair of us. You know we would."</p>
+<p>"There's no more leaf, Owen. They burned it."</p>
+<p>"They burned <em>theirs.</em>" He turned his head on the pillow and looked at her. "You think there's a sailor on that river who wouldn't sell his mother for the right money? It'll be coming in somewhere, Sarge. It'll be coming in already."</p>
+<p>She didn't answer him. She sat there till he slept, and then she went and stood at Ned's window, where the Downs had gone black and gray under a sky the color of dishwater, and she thought of the names inside the lid of a box that didn't exist anymore.</p>
+<p>She had brought her lads through a winter and a spring, and she'd let them drink from dying boys to keep them alive. Now Owen and Ned were all she had left. She'd be burying them both inside the week, for want of a leaf that had been in her own padlocked box less than a fortnight ago.</p>
+<p><em>No,</em> Mags thought. <em>I won't. Not these two.</em></p>
+<p>She went down to the river that night.</p>
+<p class="brk" aria-hidden="true">&#10086;</p>
+<p>Mags spent that night on the Ashcombe wharves, with her hand in a sling and her pay in her boot. At last a lighterman in a tavern on the river road took her aside and told her to go and see Lem Garrow.</p>
+<p>Lem Garrow had a boat. He brought things up the Wend from the sea that the Customs didn't know about, and he had a face like a closed door. He looked at her a long while across a tar-stinking table in his own cabin.</p>
+<p>"Who told you I'd have that?"</p>
+<p>"Nobody. I guessed." Mags put her pay on the table, every coin of it, and her sergeant's medal on top. "I'm told it'll be coming in somewhere. I'm told it'll be coming in already."</p>
+<p>"It's coming in." Garrow didn't touch the money. "Not much. From a long way off. Don't ask me where. And what's coming in is going to the ones who'll pay most for it." He looked at her sling. "What do you want it for? You're not one of them."</p>
+<p>"No. I'm just a sergeant." Mags met his eyes. "I've two lads in the army hospital up the hill with wounds they could mend if they had the leaf. If they don't get it, they'll be dead by the end of the week."</p>
+<p>Garrow was quiet for a while. Then he reached under the table, and came up with a little packet of waxed paper twisted shut at both ends, and laid it next to her medal.</p>
+<p>"That's a twist," he said. "Eight pinches. Don't let me hear you've been caught with it."</p>
+<p>He took the money. He pushed the medal back across the table at her.</p>
+<p>"Keep that," he said. "You'll want it to remind you who you were."</p>
+<p class="brk" aria-hidden="true">&#10086;</p>
+<p>Mags couldn't let them drink in the hospital. She had decided that much walking up the hill. There were men in that hospital who were dying, and she knew exactly how easy it would be, and she would not do it again. Not here. Not anymore.</p>
+<p>So at two in the morning, with the night orderly asleep at his table, she got Owen Brack into a wheeled chair and Ned Corley onto his feet, with his arm over her shoulder and his head lolling, and she took them both out the back door into the hospital garden.</p>
+<p>It was a big garden, walled, with a lawn in the middle and a linden walk down one side and a kitchen garden at the bottom where the hospital grew its cabbages. The grass was wet. An owl was calling somewhere in the lindens.</p>
+<p>She gave them a double pinch each after so long without, and watched them chew it, and watched Ned's face change as the leaf came up in him: watched his eyes go past her and past the wall and out into the night, the way they used to on the fire step, as if all the world had come back on at once.</p>
+<p>"Oh," Ned said. "Oh, Sarge. There's an owl in the third linden. There's mice in the cabbages. There's—" He started to cry.</p>
+<p>"Hands on the grass," Mags said. "Both of you. And don't you stop till you're mended."</p>
+<p>They knelt on the lawn, or Ned knelt, and Owen leaned out of the wheeled chair and put both great hands flat on the turf, and they drank.</p>
+<p>She'd seen it done a hundred times on the line, but never like this, never slowly and on purpose. The grass went gray under their hands, and the gray spread out from their palms across the lawn in two widening rings, like ink in water. A beetle fell out of the grass. The owl in the third linden stopped calling.</p>
+<p>Owen Brack made a sound, low and long, and pressed his hands harder into the turf. Ned was shaking, and then he wasn't.</p>
+<p>When they stopped, the two gray rings had met in the middle of the lawn, and the bottom of the linden walk had gone gray. Ned got up without help. Owen pushed the blanket off his knees, stood, and put his weight on the bad leg. He pressed a hand to his thigh, and didn't flinch.</p>
+<p>Mags touched Ned's forehead. The fever was gone. He caught her hand and held it for a moment, then let go to work the stiffness out of his shoulders.</p>
+<p>She looked back at the lawn. Come daylight, anyone who'd served at the front would know what had happened here.</p>
+<p>"We can't stay," she said. "Leave the chair. Come with me."</p>
+<p>They went along the garden path and out through the gate, Mags first, with Owen and Ned walking behind her. By the time they reached the street, the strength of the drink was ebbing. Ned began to shiver. Owen stopped with a hand against the wall, green at the corners of his mouth. Mags waited with them until the worst of the cold had passed. Owen's leg still held him. Ned's fever didn't come back.</p>
+<p>She took them down toward the docks before the hospital woke. The remaining leaf was in her pocket, four pinches still in Garrow's paper. She'd bought it to get them mended, and they were mended.</p>
+<p>Later that summer, Owen and Ned walked out of Ashcombe on four good legs.</p>
+<p>That was all Mags had wanted, and she meant it to be the end of it.</p>
+<p class="brk" aria-hidden="true">&#10086;</p>
+<p>But Lem Garrow's boat kept coming up the river. And a month after Owen and Ned had gone, a man she'd never seen before came to the door of the lodging house where she had a room, shaking and gray, and said that a lad called Corley had told him that if he was ever in trouble in Ashcombe, he should ask for the sergeant.</p>
+<p>Then there was another one. Then there were four.</p>
+<p>They came the same way, all of them, with the same look on them, listening at the walls. Old soldiers mostly, at first. Green lads from other companies and other regiments, who'd been dosed by the sackful for three years and then had it taken away in a morning, and found out the hard way what the black was. A few were hurt, like Owen and Ned. Most were only frightened. A few would have done anything at all for a pinch, and those ones she watched.</p>
+<p>She never sold one of them a twist without telling him how much to take, and how not to, and what happened to men who didn't listen. Some of them listened.</p>
+<p>The war money and the boat money together bought the lease on a shop at the end of Gull Alley, down by the docks, from a pawnbroker who was glad to see the back of it. She hung a ship's bell over the door, cracked, so she'd hear it from the back room. Nobody asked what a lady pawnbroker kept behind the curtain. The docks didn't ask things.</p>
+<p>The years went by. The green lads got fewer, and older, and then most of them stopped coming, one way or another. The Downs stayed gray. The boats kept coming up the river.</p>
+<p>Every so often, a young one came in.</p>
+<p class="brk" aria-hidden="true">&#10086;</p>
+<p>"Three weeks out of the army," Mags said. "And how many days since your last pinch?"</p>
+<p>The young man sat on her stool with his hat in his shaking hands. He'd stopped dripping. "Three. I made the last of it go as far as I could."</p>
+<p>"Three days." Mags let out a breath. "Miss your two pinches and the black follows. Locks you up for two or three days. Were you able to get up this morning?"</p>
+<p>He looked up at her sharply. "This afternoon. How do you know that?"</p>
+<p>"I've seen it before." She put the pipe down on the counter. "You shouldn't have had to go through it alone. Don't wait until you're out. Come when you're low."</p>
+<p>"I know, ma'am. I left it too late."</p>
+<p>"Don't you ma'am me. I was a sergeant." She went through the curtain at the back of the shop, and opened a drawer with a key she kept on a string around her neck, and came back with a twist of waxed paper. She didn't give it to him. She held it in her good hand on the counter between them.</p>
+<p>The young man was looking at her left hand. At the two stumps. She saw him notice them, and decide not to ask, and she liked him a little for it.</p>
+<p>"Are you one of us?" he said instead. "One of the ones who..." He couldn't find the word. He moved his hands.</p>
+<p>"No," Mags said. "Not an Awakened."</p>
+<p>She looked at him a moment longer: the army coat, the gray face, the eyes that went to the walls and came back empty. Twenty-two, perhaps. Ned Corley would be thirty by now.</p>
+<p>"Just a sergeant," she said. "I had nine of you lot in my company, and I buried seven."</p>
+<p>The young man didn't say anything. He didn't ask what had happened to the other two. She liked him a little more for that, too.</p>
+<p>Mags put the twist down in front of him and kept her hand on it.</p>
+<p>"A double pinch tonight, here, where I can see you," she said. "Then one in the morning, and one in the afternoon, and no more than that, not if you're tired and not if you're frightened and not if somebody you like is bleeding in the road. More than two a day and it'll own you inside a year. Fewer than two, and you'll be on the floor again, and I'll not be there to pick you up." She leaned on the counter. "And if you put your hands on anything that's alive and drink from it, you'll go green. You know about that?"</p>
+<p>He pulled his collar aside, just an inch. There was a thread of green on the skin over his heart, thin as a hair, branching like a crack in ice.</p>
+<p>"Then you know," Mags said. "It doesn't go back. It only creeps. Keep your hands to yourself, and it'll creep slow."</p>
+<p>She took her hand off the twist.</p>
+<p>He opened it with shaking fingers, measured out two pinches under her eye, and put them in his cheek. She watched him chew. She watched the leaf come up in him. The hunch went out of his shoulders. His hands steadied. The color came back into his face in two slow flushes, as if someone were warming him from inside, and then his eyes went past her, past the counter and the cases and the figurehead in the corner, through the wall, and out into the night.</p>
+<p>"There's eels," he said, wondering. "In a barrel. Outside."</p>
+<p>"There are. They belong to the woman next door. Takes a strange lady to sell eels."</p>
+<p>He laughed, a short, startled sound, as though he'd forgotten how. Then he stood up, and put his hat on, and put the twist away in an inside pocket of the army coat, and paid her what she asked without arguing about it.</p>
+<p>"What's your name?" Mags said.</p>
+<p>"Hale. Gideon Hale." He hesitated at the door. "Thank you, Sergeant."</p>
+<p>"Shut the door behind you," Mags said. "I've had enough of the rain for one evening."</p>
+<p>"Yes, Sergeant."</p>
+<p>The bell went over the door, cracked, like somebody dropping a spoon, and he was gone into the rain.</p>
+<p>Mags stood behind the counter for a long time. Then she took up her pipe and filled it and lit it, which she'd been trying to stop doing, and she smoked it, looking at nothing, at the shut door, toward the north, where in the dark beyond the chimneys the Downs lay gray and burned and quiet.</p>
+<p>Out on the water, a boat was coming up the Wend.</p>
+</div>
+</article>
+
+<div class="gate" id="gate">
+<div class="fade"></div>
+<div class="box">
+<h2>Keep reading</h2>
+<p>Please enter your email for updates on the next book, and the rest of the story will open right here.</p>
+<form id="signup" novalidate>
+<label for="email" class="sr" hidden>Email address</label>
+<input id="email" name="fields[email]" type="email" autocomplete="email" inputmode="email" placeholder="you@example.com" required aria-describedby="err">
+<button class="btn" type="submit" id="go">Read the story</button>
+</form>
+<p class="err" id="err" role="alert"></p>
+<p class="fine">No spam. Just the occasional note about new books. Unsubscribe any time.</p>
+</div>
+</div>
+</div>
+</main>
+
+<section class="end wrap" id="end" hidden>
+<div class="col">
+<h2>Thank you for reading</h2>
+<p>If you enjoyed <em>Ash of Verdance</em>, a review on Amazon helps more than you'd think. Even a sentence or two helps other readers find the book.</p>
+<div class="ctas">
+<a class="btn" data-track="Mags review click" href="/review">Leave a review</a>
+<a class="btn ghost" data-track="Mags book click" href="/">About Ash of Verdance</a>
+</div>
+<p class="thanks">Haven't read the book yet? That's where you meet the young soldier again.</p>
+</div>
+</section>
+
+<footer class="wrap">
+<div class="col">
+<span>&copy; 2026 Ben Anderson</span>
+<a href="/">benandersonbooks.com</a>
+</div>
+</footer>
+
+<script>
+window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+</script>
+<script defer src="/_vercel/insights/script.js"></script>
+<script>
+(function(){
+  var ENDPOINT='https://assets.mailerlite.com/jsonp/2762388/forms/203033215632410455/subscribe';
+  var KEY='mags-unlocked';
+  var rest=document.getElementById('rest'),gate=document.getElementById('gate'),end=document.getElementById('end');
+  var form=document.getElementById('signup'),email=document.getElementById('email'),err=document.getElementById('err'),go=document.getElementById('go');
+
+  function unlock(scroll){
+    rest.hidden=false;end.hidden=false;gate.hidden=true;
+    try{localStorage.setItem(KEY,'1');}catch(e){}
+    if(scroll){var b=rest.querySelector('.brk');if(b)b.scrollIntoView({behavior:'smooth',block:'start'});}
+  }
+  try{if(localStorage.getItem(KEY)==='1')unlock(false);}catch(e){}
+
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var v=email.value.trim();
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){err.textContent='Please enter a valid email address.';email.focus();return;}
+    err.textContent='';go.disabled=true;go.textContent='One moment';
+    var fd=new FormData();fd.append('fields[email]',v);fd.append('ml-submit','1');fd.append('anticsrf','true');
+    var done=false;function finish(){if(done)return;done=true;window.va('event',{name:'Mags signup'});unlock(true);}
+    // Never make a reader wait on the email service: open the story when the request
+    // returns, or after a few seconds regardless.
+    fetch(ENDPOINT,{method:'POST',body:fd,mode:'no-cors'}).then(finish,finish);
+    setTimeout(finish,4000);
+  });
+
+  document.querySelectorAll('a[data-track]').forEach(function(a){a.addEventListener('click',function(){window.va('event',{name:a.getAttribute('data-track')});});});
+})();
+</script>
+</body>
+</html>
