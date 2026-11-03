@@ -47,7 +47,7 @@ content_lines:                   # hard rules from the taste interview
 
 model_authors: []                # authors whose craft this book studies (book-new research and calibration)
 touchstones: []                  # books/films the author loves for this project
-off_limits: []                   # names, characters or plots from the author's earlier books not to reuse
+off_limits: []                   # names, characters, plots or signature images from the author's earlier books not to reuse
 
 calendar:
   day0: null                     # e.g. "Friday, November 28"; book-plan locks this

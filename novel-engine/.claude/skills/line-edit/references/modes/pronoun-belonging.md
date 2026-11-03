@@ -19,6 +19,8 @@ Read each paragraph like a reading-test question. Look for:
 - a character described again when the reader already has the description;
 - a detail that disagrees with the same moment in another chapter;
 - doubled or garbled wording;
+- a sentence after a beat that only interprets it (the no-commentary rule): end on the concrete thing;
+- a gesture done twice in one scene, or a word or count echoed in the next clause (the once rule);
 - words the reader is likely to misread (the reader's-English rule) and any words the author has flagged in the style guide.
 
 Pronoun fixes are applied directly. Belonging findings are taste calls unless they are plainly errors (a contradiction, garbled wording).
