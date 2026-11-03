@@ -32,6 +32,8 @@ Read these, in this order. Long files: list their headings first (`grep -n '^#' 
 - **Names first shown on the page:** list every canon name (people, places, the river, guilds) this chapter puts on the page for the first time, so the author confirms each before it's in prose. A name locked in a planning session may not be one the author remembers choosing. (Thornwake: the river "the Wend" was canon from planning; the author rejected it on reading ch 1.)
 - **New names come with options:** for every new named character or place, give four to eight options across different flavors (street nickname, plain worn-down name, something with a meaning), checked against the names page, with one recommendation. Never a single name. (Thornwake: "Nib" was rejected, then a batch of four, before "Zell" from a broader list.)
 
+- **Routines work:** for every institutional routine the chapter shows (intake, payment, tags, inspections), the brief says step by step who does what, when, with what proof, and how someone could cheat it. If canon doesn't say, it's an open question. (Thornwake ch 2: the brief had the clerk tag and pay for every find at the window before anyone knew which were anchors; the author fixed it with a dawn intake that tests finds in the mist and pays per anchor.)
+
 Stay within locked rules. If the chapter seems to need a new capability, or a new behavior of an existing one, that is an open question, not a beat. (In *Ash of Verdance* a rule about what one user can sense of another was invented while drafting a late chapter; asked at the brief, it would have cost no retrofits.)
 
 ## Check (fresh eyes)

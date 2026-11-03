@@ -82,6 +82,22 @@ The first full run of write-chapter on Thornwake. The stages held; the author's 
 | Afternoon cut straight to "The mist came as the light went" | B32 (in-scene time); check item 18 |
 | The cheese's scar was explained in the same words as the ham's | B33 (second tellings); check item 18 |
 
+## Checking and revising chapter 2 (2026-11-03)
+
+The author's notes on Sabine's first chapter were mostly about tics a single pass can't see: a repeated joint ("because"), a repeated frame, and a group of minor characters whose replies added up to meanness.
+
+| Note | Where it lives now |
+|---|---|
+| Fifteen "because" clauses; two near each other at the vault | Style guide B34; drafting preamble; draft stage; check stage item 19 |
+| "nodded as if…" then "looked at her as if…" in the same chapter | B35 (sentence shapes); check item 19 |
+| Two curt replies from the dorm, back to back, read as mean | B36 (kind ensembles); check item 19 |
+| The pricing paragraph implied its question instead of asking it | B37 (asked aloud); check item 19 |
+| "*Isaure, half a candle*" meant nothing until much later | B38 (first mentions); check item 19 |
+| Crews were paid for every find and tagged on the spot, before anyone knew which were anchors | B39 (working routines); brief stage: routines work; check item 19; canon: dawn intake |
+| A second debt crept in, and Sabine read as broke | B40 (no unasked motifs); the author made the coat loan a deliberate plant |
+| "A real question… a real answer" echoed *Ash of Verdance* | Section C example; check item 17 now greps the earlier book |
+| Drafts should run on Opus 5.5 | draft stage: drafting subagent on Opus |
+
 ## Still untested
 - Book 2 layout: the engine recommends keeping a series in one folder, but hasn't tried it.
 - The Thornwake wiki itself hasn't been migrated to the new templates (its guilds live in `story/guilds/`, its series page is `trilogy-arc.md`). Both work; `/book-next` will report the folder names as schema drift if the book's `CLAUDE.md` doesn't list them, and it does.
