@@ -22,7 +22,7 @@ Also run the **Extra lock questions** from every genre module named in `book.yam
 
 ## 3. Calendar
 - **Day 0:** a weekday and date (in-world or real), and what happens on it.
-- Day-by-day plan for act one; act-level for the rest, with the climax day fixed.
+- **A chapter timeline, locked before the first chapter brief:** every chapter's day or day range, and the gap from the chapter before, built from the story's fixed rhythms (growth or travel times, weekly events, seasons, how long a plan takes). Chapters don't need to run day to day; the day numbers are for continuity, and the prose only marks each jump plainly. Check that chapters sharing a day don't contradict each other's hooks, and that the climax fits every clock that runs into it. (Thornwake had only an act-level plan; at ch 1's brief, ch 1's hook contradicted ch 3's, and the climax and the plant's 60-day seed clock couldn't fall in the same week. The author stopped the brief to lock the timeline.)
 - **Ages and years:** each lead's age now and at every past event the book shows (flashbacks), and years since the key events. These leak into dialogue and must agree everywhere.
 - Recurring events (meetings, market days, shifts, church, court sessions) with their weekday.
 - Travel times between key places, and how they change at night or in weather.

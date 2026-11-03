@@ -8,6 +8,7 @@ Read: the outline so far, the series arc (series), every lead's page, the system
 Bring a complete proposal in one message, so the author reacts to a whole book rather than answering questions about an empty one. Nothing is written to the outline yet.
 - **Structure:** a prelude or prologue? Named **parts** (four parts is a sturdy default for a novel)? Short **interludes** between parts from outside the main POVs (the antagonist's side, a hunter, a minor viewpoint the leads can't give)? Say what each device buys and costs (in close third, every page away from the focus lead is a page the reader isn't with them).
 - **POV split:** chapters per POV, including flashbacks. The focus lead carries about half; the others get enough chapters that each has a visible arc.
+- **Day column:** fill each chapter's day from the chapter timeline in `story/continuity.md` → Calendar (lock-rules stage), not from guesses.
 - **Flashbacks** (if the focus lead has them): run them in chronological order, one every few chapters, each landing **just before the present-day beat it sets up** (the wound flashback right before the low point; the aftermath right before the climax choice).
 - **The spine's mirror:** say where the past choice is shown and where the climax echoes it.
 - **The chapter list:** one row per chapter with POV and what happens, part headings as rows.

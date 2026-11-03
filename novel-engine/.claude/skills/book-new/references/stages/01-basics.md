@@ -8,7 +8,7 @@
 5. Point of view and tense: first or third; close (limited) or omniscient; one POV per chapter or mixed; one POV or several; past or present. **If the author points to a model author** ("like Sanderson"), say plainly what that author does (Sanderson: close third, past tense, several POVs, one per chapter) and confirm. Authors often say "omniscient" when they mean several limited POVs; explain the difference with a one-line example before recording it.
 6. Audience: adult, young adult, middle grade, or a crossover ("adult, suitable for teens"). The reader's English (American, British…), which is about the *reader*, not the setting.
 7. Hard content lines (romance, sex, violence and gore, profanity and oaths, religion, anything else). These become rules.
-8. Earlier books by this author: anything not to reuse (character names, plots, settings). These go in `off_limits`.
+8. Earlier books by this author: anything not to reuse (character names, plots, settings, and signature images or phrasing, such as the image in a title). These go in `off_limits`.
 9. Beta readers: will anyone read along as chapters are approved? If so, in a Google Doc? (Only record names and the doc ID.)
 
 ## Do

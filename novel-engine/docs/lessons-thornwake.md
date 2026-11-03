@@ -50,7 +50,38 @@ Short version: the stages were the right checklist, but the author didn't plan i
 | "One voice for the whole book; the POV character colors it" | Style guide template voice note and preamble; calibration template |
 | Model authors each own a layer (structure and system; the protagonist's voice and withheld plans; warmth and the mentor) | book-new stage 4, section G |
 
+## Drafting the prelude: the author's line notes (2026-11-02)
+
+A second round of notes on the approved prelude. Each became a style rule (B22–B27 in the template, section I in the book) with a self-check line and a check-stage item, so the drafter and the reviewer both look for it.
+
+| Note | Where it lives now |
+|---|---|
+| The opening line summarized Neth's fear and used "the rite" before the reader knew it; the replacement then used "the water" with nothing before it | Style guide B22; check stage item 14 |
+| The village's rule "Nobody dug the seam" gave away the closing dig and was redundant with the come-once rule | Style guide B23; check stage item 15 |
+| Neth watched his younger self drown and only reflected; he should shout and try to stop it, even against the elder's warning | Style guide B24; drafting preamble; check stage item 16 |
+| Kicker sentences that explain the beat ("Knowing it had not helped at all.") | Style guide B25; belonging pass; check stage item 16 |
+| "When we get home, I'll ask him to swim with me" was too blunt; the author cut the want entirely | Style guide B26; drafting preamble; check stage item 16 |
+| The elder raised the cup twice; "Twice… and twice" | Style guide B27; belonging pass; check stage item 16 |
+| "The color of ash" echoed the author's earlier book, *Ash of Verdance* | Style guide section C; `off_limits` now covers signature images; check stage item 17 |
+| Whether the dig scene belongs in book 1 or a book 2 prologue: kept, as the prelude's hook and the source of the reader's head start on the Miasma | Book's outline (no engine change) |
+
+## Briefing and drafting chapter 1 (2026-11-02 to 11-03)
+
+The first full run of write-chapter on Thornwake. The stages held; the author's notes found gaps in what the brief checks before the author sees it, and in sentence rhythm.
+
+| Note | Where it lives now |
+|---|---|
+| The author had to ask for a continuity check on the brief; it found a line ("except once") that contradicted Dane's canon past, plus a geography slip and a fair-play gap | write-chapter brief stage: new **Check (fresh eyes)** step before Present |
+| The brief couldn't fix its day: the outline had only an act-level calendar, ch 1's hook contradicted ch 3's, and the climax couldn't share a week with the plant's seed clock | book-plan lock-rules stage: a chapter timeline locked before the first brief; outline Day column filled from it; brief stage stops if it's missing |
+| "Nib" and then four more names were rejected before "Zell" | brief stage: new names come with four to eight options across flavors |
+| The river "the Wend", locked in planning, was rejected on first sight in prose | brief stage: list canon names shown on the page for the first time |
+| Paragraphs kept opening on short sentences; short punchy lines read as a pattern | Style guide B28 (rhythm); drafting preamble; check stage item 18 |
+| "Nobody guarded the Low Bridge at night. Tonight four wardens stood…" read as a contradiction | B29 (stated norms); check item 18 |
+| Orrin's "If you haven't harvested anything with it" (a used anchor would have crumbled); echoes "always said yes"; travel from a rooftop the mist can't easily reach | B30 (in-world logic); check item 18 |
+| Shorthand: "The Tabulary's word was crossings from the Mine…", "her usual arch", "got his weight back" | B31 (plain reports); check item 18 |
+| Afternoon cut straight to "The mist came as the light went" | B32 (in-scene time); check item 18 |
+| The cheese's scar was explained in the same words as the ham's | B33 (second tellings); check item 18 |
+
 ## Still untested
-- Drafting: no Thornwake chapter has been briefed or drafted yet, so the brief and check changes are untested.
 - Book 2 layout: the engine recommends keeping a series in one folder, but hasn't tried it.
 - The Thornwake wiki itself hasn't been migrated to the new templates (its guilds live in `story/guilds/`, its series page is `trilogy-arc.md`). Both work; `/book-next` will report the folder names as schema drift if the book's `CLAUDE.md` doesn't list them, and it does.
