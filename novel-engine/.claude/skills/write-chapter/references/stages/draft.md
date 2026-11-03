@@ -1,6 +1,6 @@
 # Stage: draft
 
-Run the drafting in a **subagent** when available, giving it the load list below, so the main session keeps a clean context for the check and the author's notes. The subagent writes the file and returns the new-facts list.
+Run the drafting in a **subagent** when available, giving it the load list below, so the main session keeps a clean context for the check and the author's notes. The subagent writes the file and returns the new-facts list. **Run the drafting subagent on Opus 5.5** (`model: "opus"`), whatever model the session itself uses (author, 2026-11-03).
 
 ## Load
 - The approved brief.
@@ -23,6 +23,10 @@ Run the drafting in a **subagent** when available, giving it the load list below
 - **When characters argue or explain how something works, state each side in one plain sentence** (the plain-theory rule).
 - **Put the POV's want and stakes in the first paragraph; make each scene's last line land its point** (story rule A2, the last-line rule). Show damage happening to specific things (A5).
 - Prefer plain lines to clever ones: a joke or simile that needs decoding gets cut (the clarity rule).
+- Give reasons without stacking "because" clauses (the because rule), and don't reuse a sentence frame, especially reaction frames like "as if…" (the sentence-shape rule).
+- Minor characters keep the tone of their pages; never stack two curt replies at the POV (the kind-ensemble rule).
+- A question the POV turns over is written as a question she could ask aloud (the asked-aloud rule); a note or label on the page gets its meaning in the same line or the next (the first-mention rule).
+- Don't invent a recurring hardship or motif the brief didn't ask for, and don't simplify an institutional routine the brief describes (the no-unasked-motif and working-routine rules).
 - After drafting, scan with `craft/ai-workflow/ai-prose-tells.md` and fix what it finds. Use it as a check, not as a prompt.
 
 ## Save
