@@ -101,12 +101,9 @@ function finishLeg(node){
   if(travel.length)beginLeg();
 }
 function populateWalk() {
-  $('viewpoints').hidden=walkStops[sceneName].length<2;
+  $('viewpoints').hidden=true;
   walkLayer.replaceChildren();waypoints.length=0;$('viewpoints').replaceChildren();$('room-exits').replaceChildren();
   walkStops[sceneName].forEach((stop,index)=>{
-    const button=document.createElement('button');button.type='button';button.textContent=String(index+1).padStart(2,'0');
-    button.setAttribute('aria-label',stop.label);button.setAttribute('aria-pressed',String(index===stopIndex));
-    button.addEventListener('click',()=>moveToStop(index));$('viewpoints').append(button);
     const point=worldPoint(sceneName,stop.position);point.y-=1.54;addWaypoint(point.toArray(),stop.label,()=>moveToStop(index),'station',index);
   });
   for(const exit of doorways[sceneName]){
@@ -150,7 +147,7 @@ function updateModeUI() {
   document.querySelectorAll('[data-floor]').forEach(button=>button.setAttribute('aria-pressed',String(Number(button.dataset.floor)===overviewFloor)));
   walkLayer.hidden=mode!=='look';
   $('position-label').textContent=walkStops[sceneName][stopIndex].label;
-  $('step-forward').textContent=stopIndex<walkStops[sceneName].length-1?'Next viewpoint →':scenes[sceneName].nextLabel+' →';
+  $('step-forward').hidden=stopIndex>=walkStops[sceneName].length-1;$('step-forward').textContent='Next viewpoint →';
   if(mode==='look'&&scenes[sceneName].interior)$('drawing-label').textContent=`Standing in ${scenes[sceneName].label.toLowerCase()}`;
   else $('drawing-label').textContent=overviewFloor===0?'The ground floor · parlor, hall & kitchen':'Upstairs · two bedrooms & the landing';
 }

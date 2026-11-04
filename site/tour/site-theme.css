@@ -69,3 +69,10 @@ dialog{background:var(--hero);color:var(--fg);border-color:var(--pill-line);colo
  .hotspot-label>span{font-size:16px}.hotspot-label strong{font-size:21px}.overview-controls #begin-walk{font-size:10px}
  .room-exits button{font-size:16px}.folio{font-size:15px;padding-inline:24px}.sources-body{font-size:18px}
 }
+
+.book-card{margin-top:21px;padding:16px;background:var(--pill);border:1px solid var(--pill-line);border-radius:3px}
+.book-line{font:19px/1.3 var(--serif);margin:6px 0 12px}
+.book-cta{display:flex;align-items:center;justify-content:center;min-height:48px;background:var(--lamp);color:var(--button-ink);border-radius:3px;font:500 11px/1.4 var(--display);letter-spacing:.06em;text-decoration:none}
+.book-cta:hover{background:var(--lamp-hi);color:var(--button-ink)}
+.book-alt{display:block;margin-top:10px;font-size:16px}
+#step-forward{border-left:0;color:var(--fg)}
