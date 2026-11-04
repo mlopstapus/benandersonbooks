@@ -104,7 +104,7 @@ export const walkStops = {
   ],
   kitchen: [
     {id:'entry',label:'Inside the kitchen',position:[1.4,1.62,.05],direction:[-.6,1.0,1.9]},
-    
+
   ],
   bedroom: [
     {id:'entry',label:'Inside Callum’s room',position:[1.1,1.62,.05],direction:[-.3,1.0,1.8]},
