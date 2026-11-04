@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0e1615">
+  <title>6 Wicker Street · Ash of Verdance</title>
+  <meta name="description" content="Step into Gideon Hale’s home. An interactive, illustrated tour of 6 Wicker Street, from Ash of Verdance by Ben Anderson.">
+  <link rel="icon" href="../cover.jpg">
+  <link rel="stylesheet" href="tour.css?v=hearth-15">
+  <link rel="stylesheet" href="site-theme.css?v=hearth-15">
+  <script type="importmap">{"imports":{"three":"../vendor/three/three.module.js"}}</script>
+</head>
+<body>
+  <header class="masthead">
+    <a class="brand" href="../" aria-label="Ash of Verdance by Ben Anderson"><img class="brand-cover" src="../cover.jpg" alt=""><span>Ash of Verdance<small>Ben Anderson</small></span></a>
+    <a class="back-link" href="../#map">← Back to the book</a>
+  </header>
+  <main class="workspace">
+    <section class="plate" aria-label="Interactive three-dimensional illustration of Gideon Hale’s home">
+      <div class="plate-heading"><p class="eyebrow">SOUTHBANK · THE HALE HOUSE</p><h1>6 Wicker Street</h1><p class="subtitle">A small house. A whole life inside.</p></div>
+      <div id="viewport" tabindex="0" aria-label="3D house tour. Drag to look around. Click floor rings to move. Scroll to zoom. Use arrow keys to turn, plus and minus to zoom. Use the location and detail buttons to explore.">
+        <div class="loading" id="loading" role="status"><span class="loading-drawing" aria-hidden="true">⌂</span>Opening the sketchbook…</div>
+        <div class="fallback" id="fallback" hidden><p id="fallback-message">The house drawing could not open. Reload to try again. You can still explore the room notes in the guide.</p><button type="button" class="note-enter" onclick="location.reload()">Reload the drawing</button><details id="error-details" hidden><summary>Technical details</summary><pre id="error-text"></pre></details></div>
+      </div>
+      <div id="hotspots" class="hotspots" aria-label="Details from the novel"></div>
+      <div id="waypoints" class="waypoints" aria-label="Move through the house"></div>
+      <div id="overview-controls" class="overview-controls"><div role="group" aria-label="Choose a floor"><button type="button" data-floor="0" aria-pressed="true">Ground floor</button><button type="button" data-floor="1" aria-pressed="false">Upstairs</button></div><button type="button" id="begin-walk">Step inside the house →</button></div>
+      <div id="walk-controls" class="walk-controls"><div><p class="eyebrow">YOU ARE STANDING</p><p id="position-label">Across Wicker Street</p></div><div id="viewpoints" class="viewpoints" role="group" aria-label="Standing viewpoints"></div><button id="step-forward" type="button">Next viewpoint →</button></div>
+      <p id="tour-status" class="sr-only" role="status" aria-live="polite"></p>
+      <div class="view-tools" role="group" aria-label="Camera mode"><button type="button" id="orbit" aria-pressed="false">↻ <span>Overview</span></button><button type="button" id="look" class="active" aria-pressed="true">◎ <span>Walk through</span></button></div>
+      <div class="zoom-tools" role="group" aria-label="Camera controls"><button id="zoom-in" type="button" aria-label="Zoom in">+</button><button id="zoom-out" type="button" aria-label="Zoom out">−</button><button id="reset" type="button" aria-label="Reset camera view">⟲</button></div>
+      <p class="drawing-label" id="drawing-label">Fig. 01 — A page from Wicker Street</p>
+      <p class="gesture-hint" id="gesture-hint">DRAG TO ROTATE · SCROLL TO EXPLORE</p>
+      <button class="map-peek" id="open-map" type="button" aria-haspopup="dialog"><img src="../map.jpg" alt=""><span>YOU ARE HERE<small>Southbank, Ashcombe ↗</small></span></button>
+      <div class="compass" aria-hidden="true"><span id="compass-needle">↑</span><small>VIEW</small></div>
+    </section>
+    <aside class="journal" aria-label="House tour notes">
+      <div class="journal-top"><p class="eyebrow">EXPLORE ASHCOMBE <span>01</span></p><div class="fine-rule"></div><p class="journal-kicker" id="scene-kicker">AT HOME WITH THE HALES</p><h2 id="scene-title">The quiet end<br>of the street.</h2><p class="scene-description" id="scene-description">A narrow terrace on the Southbank. Gideon and his son Callum make their home at number six.</p></div>
+      <nav class="locations" aria-label="Tour locations"><button type="button" data-scene="street" aria-pressed="true" class="selected"><span>01</span> Wicker Street <span>↗</span></button><button type="button" data-scene="parlor" aria-pressed="false"><span>02</span> The parlor <span>↗</span></button><button type="button" data-scene="kitchen" aria-pressed="false"><span>03</span> The kitchen <span>↗</span></button><button type="button" data-scene="bedroom" aria-pressed="false"><span>04</span> Callum’s room <span>↗</span></button><button type="button" data-scene="gideon" aria-pressed="false"><span>05</span> Gideon’s room <span>↗</span></button><button type="button" data-scene="yard" aria-pressed="false"><span>06</span> The back yard <span>↗</span></button><button type="button" data-scene="hall"><span>07</span> The hall <span>↗</span></button><button type="button" data-scene="landing"><span>08</span> The landing <span>↗</span></button></nav>
+      <nav id="room-exits" class="room-exits" aria-label="Doorways from this room"></nav>
+      <div class="notice"><p class="eyebrow">THINGS TO NOTICE <span>↓</span></p><div id="details-list" class="details-list"></div></div>
+      <article class="field-note" aria-live="polite" aria-atomic="true"><p class="eyebrow" id="note-number">FROM THE MANUSCRIPT</p><h3 id="note-title">The way home</h3><p id="note-text">The family usually comes in through the back. The front door opens straight onto Wicker Street, and sticks in its frame in wet weather.</p><button type="button" id="note-enter" class="note-enter" hidden></button><p class="source" id="note-source">CHAPTERS 13 & 26 · PHYSICAL DETAIL ONLY</p></article>
+      <button type="button" class="next-stop" id="next-stop">Enter the front parlor <span>→</span></button>
+      <div class="journal-foot"><span class="tiny-diamond" aria-hidden="true">◇</span><p>An illustrated interpretation.<br>Details from the book. No story reveals.</p><button type="button" id="open-sources">About this tour ↗</button></div>
+    </aside>
+  </main>
+  <footer class="folio"><span>&copy; 2026 Ben Anderson</span><a href="../">Ash of Verdance</a></footer>
+  <dialog id="map-dialog" aria-labelledby="map-title"><div class="dialog-heading"><div><p class="eyebrow">A CITY ON THE RIVER WEND</p><h2 id="map-title">Find your bearings.</h2></div><button type="button" class="close-dialog" aria-label="Close map">×</button></div><div class="dialog-map"><img src="../map.jpg" width="1200" height="1800" alt="Reader map of Ashcombe"><button type="button" class="map-marker" id="map-house">⌂ <span>6 Wicker Street</span></button></div><p class="map-disclaimer">Wicker Street is placed approximately within Southbank; it is not labelled on the reader map.</p></dialog>
+  <dialog id="sources-dialog" aria-labelledby="sources-title"><div class="dialog-heading"><div><p class="eyebrow">A NOTE ON THE DRAWING</p><h2 id="sources-title">Built from the page.</h2></div><button type="button" class="close-dialog" aria-label="Close about this tour">×</button></div><div class="sources-body"><p>This tour imagines the Hale house near the start of <em>Ash of Verdance</em>. It uses the novel’s physical descriptions without retelling what happens in its rooms.</p><h3>What comes from the book</h3><ul><li><strong>Chapter 2, Mags:</strong> number six, the narrow front parlor, the kitchen table, lamp, and satchel peg by the back door.</li><li><strong>Chapter 8, Sallow Jack:</strong> Gideon’s washstand and looking glass, and Callum’s coat on its hook.</li><li><strong>Chapter 7, The Docks:</strong> the back gate, the kitchen range, and the clock on its shelf.</li><li><strong>Chapter 12, Seized:</strong> the hallway, creaking third stair, parlor mantel and clock, and the ill-fitting sash in Callum’s back bedroom.</li><li><strong>Chapters 13–15:</strong> the iron back latch, stone threshold, flagstones, range fender, kitchen cupboard, bread crock, coal scuttles, jug, and cup.</li><li><strong>Chapters 19, 25 & 26:</strong> the back lane, yard gate, kettle and rail, old pencil marks on the kitchen door, and the front window’s aged lace. Only descriptions of objects are used here.</li><li><strong>World notes, Ashcombe:</strong> a two-up two-down terrace on Wicker Street, roughly ten minutes from the bridge.</li></ul><h3>What the illustration fills in</h3><p>The exact dimensions, room arrangement, window positions, roof, brickwork, furniture shapes, street paving, and yard planting are artistic choices. The settee, Gideon’s dresser, and the arrangement of domestic objects fill in the house around its described furnishings. The rug is set back to leave the significant hearth boards visible. In this tour, the back entrance is placed at the end of the hall, beside the kitchen. Neighbouring houses and the street lamp establish the setting. The marker on the city map is approximate.</p><p>The tour is a three-dimensional ink drawing. The house opens as a cutaway overview. Step inside to look around at eye level, click the floor rings to move, or follow an arrow through an open doorway. The rooms share one connected hall, staircase and landing; moving between them follows that route. Numbered viewpoint buttons offer the same route. Choose <em>Overview</em> to rotate a cutaway of the room. You can also use the arrow keys while the scene has focus, or select each detail in the notes. The parlor, kitchen, and both bedrooms can all be entered; the street and yard connect them.</p><p class="source">AN ILLUSTRATED INTERPRETATION · CREATED FOR BEN ANDERSON</p></div></dialog>
+  <noscript><p class="noscript">This illustrated 3D tour needs JavaScript. The house descriptions remain available above. <a href="../#map">Return to the Ashcombe map.</a></p></noscript>
+  <script type="module">
+    import('./tour.js?v=hearth-15').catch(error => {
+      console.error('House tour could not start:', error);
+      document.getElementById('loading').hidden = true;
+      document.getElementById('fallback').hidden = false;
+      document.getElementById('error-details').hidden = false;
+      document.getElementById('error-text').textContent = `${error.name || 'Error'}: ${error.message || String(error)}`;
+    });
+  </script>
+</body>
+</html>

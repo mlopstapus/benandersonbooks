@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap');
+
+/* The author's site palette and typography; the illustration retains its paper ground. */
+:root{--night:#0e1615;--hero:#121d1c;--site-line:#283734;--fg:#e7e4da;--site-muted:#a2aba5;--lamp:#e3a74f;--lamp-hi:#f0bb68;--button-ink:#1a1206;--pill:#182624;--pill-line:#3d5550;--pill-fg:#c9d6cd;--display:"Cinzel",Georgia,serif;--serif:"EB Garamond",Garamond,Georgia,serif;--sans:var(--serif);color-scheme:dark}
+body{background:var(--night);color:var(--fg);font-family:var(--serif);font-size:18px;line-height:1.5}
+a{color:var(--lamp)}a:hover{color:var(--lamp-hi)}button:hover{color:var(--lamp-hi)}
+button:focus-visible,a:focus-visible,#viewport:focus-visible{outline-color:var(--lamp);outline-offset:3px}
+.masthead{background:var(--hero);border-color:var(--site-line);padding-inline:32px}
+.brand{font:600 22px/1.2 var(--display);letter-spacing:.04em;color:var(--fg);gap:15px}
+.brand:hover{color:var(--fg)}.brand small{font:500 10px/1.5 var(--display);letter-spacing:.18em;text-transform:uppercase;color:var(--site-muted);margin-top:6px}
+.brand-cover{display:block;width:34px;height:54px;object-fit:cover;border-radius:2px;box-shadow:0 4px 12px #0005}
+.back-link{font:500 11px var(--display);letter-spacing:.08em;text-transform:uppercase;border:1px solid var(--lamp);padding:13px 15px;border-radius:3px}
+.journal{background:var(--hero);border-color:var(--site-line);color:var(--fg);scrollbar-color:var(--pill-line) var(--hero)}
+.journal .eyebrow,.journal-kicker,.source,.journal-foot{color:var(--site-muted)}
+.journal .eyebrow,.journal-kicker{font-family:var(--display);font-size:9px;letter-spacing:.12em}
+.fine-rule,.locations{border-color:var(--site-line)}
+.journal h2{font:500 25px/1.25 var(--display);letter-spacing:.025em;color:var(--fg)}
+.scene-description{font:20px/1.45 var(--serif);color:var(--fg)}
+.locations{margin-block:24px}.locations button{font:17px/1.25 var(--serif);padding:10px 9px;color:var(--fg);border-radius:2px}
+.locations button+button{border-color:var(--site-line)}.locations button span:first-child{font:10px var(--display);color:var(--site-muted)}
+.locations button span:last-child{color:var(--lamp);font-size:19px}.locations button:hover{background:var(--pill);color:var(--lamp)}
+.locations button.selected{background:var(--pill);box-shadow:inset 3px 0 var(--lamp);color:var(--lamp);font-weight:500}.locations button.selected span{color:var(--lamp)}
+.room-exits button,.note-enter{background:var(--pill);border-color:var(--pill-line);color:var(--lamp);font:16px/1.2 var(--serif);border-radius:3px;padding:10px 12px}
+.room-exits button:hover,.note-enter:hover{border-color:var(--lamp);background:var(--pill)}
+.detail-button{font:16px/1.3 var(--serif);color:var(--pill-fg);padding-block:8px}.detail-button span{border-color:var(--pill-line);font:9px var(--display);width:22px;height:22px}
+.detail-button.active,.detail-button:hover{color:var(--lamp)}.detail-button.active span{background:var(--lamp);color:var(--button-ink);border-color:var(--lamp)}
+.detail-enter{color:var(--lamp);font-size:14px;border-color:var(--pill-line)}
+.field-note{border-color:var(--pill-line)}.field-note h3{font:500 25px/1.2 var(--serif);color:var(--fg)}
+.field-note>p:not(.eyebrow):not(.source){font:19px/1.45 var(--serif);color:var(--fg)}
+.source{font:9px/1.6 var(--display)!important;letter-spacing:.06em}
+.next-stop{background:var(--lamp);border-color:var(--lamp);color:var(--button-ink);font:500 11px/1.5 var(--display);letter-spacing:.04em;border-radius:3px;padding:14px}
+.next-stop:hover{background:var(--lamp-hi);color:var(--button-ink)}
+.journal-foot p{font:italic 16px/1.4 var(--serif)}.journal-foot button{color:var(--lamp);font-size:15px;padding-top:8px}
+.folio{background:var(--night);border-color:var(--site-line);font:15px var(--serif);letter-spacing:0;color:var(--site-muted)}
+.folio a{text-decoration:none}.folio a:hover{text-decoration:underline}
+
+.plate{color:#302e29;color-scheme:light}.plate h1{font:500 clamp(30px,3.8vw,54px)/1.2 var(--display);letter-spacing:.025em}
+.plate .eyebrow{font:500 9px/1.5 var(--display);letter-spacing:.12em;color:#66685d}.subtitle{font:italic 21px/1.3 var(--serif);color:#656359}
+.view-tools,.zoom-tools,.walk-controls,.overview-controls,.plate[data-mode=look] .plate-heading,.plate[data-mode=look] .map-peek,.map-peek{background:var(--hero);color:var(--fg);border:1px solid var(--pill-line);border-radius:3px;box-shadow:0 4px 14px #0e161524}
+.view-tools button{font:17px var(--serif);color:var(--site-muted);padding:8px 11px}.view-tools button span{font-size:15px}.view-tools .active{background:var(--lamp);color:var(--button-ink)}
+.zoom-tools button{color:var(--lamp);font-size:23px}.zoom-tools button+button{border-color:var(--pill-line)}
+.walk-controls .eyebrow,.plate[data-mode=look] .plate-heading .eyebrow{color:var(--site-muted);font-size:8px}
+.plate[data-mode=look] h1{font:500 25px/1.2 var(--display);color:var(--fg);letter-spacing:.02em}
+#position-label{font:21px/1.15 var(--serif);color:var(--fg)}
+.viewpoints button{background:var(--pill);border-color:var(--pill-line);color:var(--fg);font:11px var(--display)}
+.viewpoints button[aria-pressed=true]{background:var(--lamp);color:var(--button-ink);border-color:var(--lamp)}
+#step-forward{color:var(--lamp);border-color:var(--pill-line);font:16px/1.2 var(--serif)}
+.overview-controls button{font:15px var(--serif);color:var(--fg)}.overview-controls [aria-pressed=true]{background:var(--pill);box-shadow:inset 0 -2px var(--lamp);color:var(--lamp)}
+.overview-controls #begin-walk{background:var(--lamp);border:1px solid var(--lamp);color:var(--button-ink);border-radius:3px;font:500 10px/1.4 var(--display);letter-spacing:.04em}
+.overview-controls #begin-walk:hover{background:var(--lamp-hi)}
+.map-peek{padding:8px 10px}.map-peek span,.plate[data-mode=look] .map-peek span{font:500 8px var(--display);color:var(--site-muted)}
+.map-peek small,.plate[data-mode=look] .map-peek small{font:italic 16px var(--serif);color:var(--lamp)}.map-peek img{border-color:var(--pill-line);filter:none}
+.hotspot{color:#302e29;font-family:var(--display)}.hotspot:hover,.hotspot.active{background:var(--lamp);color:var(--button-ink)}
+.hotspot-label{background:#fffdf7;color:#292825;border-color:#b7af9d;width:285px}.hotspot-label strong{font:500 23px/1.1 var(--serif)}.hotspot-label>span{font:17px/1.35 var(--serif);color:#3b3931}
+.waypoint-label{background:var(--hero);color:var(--fg);font:16px/1.25 var(--serif);border:1px solid var(--pill-line)}
+.waypoint-icon,.waypoint.door .waypoint-icon{background:var(--hero);color:var(--lamp);border-color:var(--lamp)}
+.waypoint:hover .waypoint-icon,.waypoint:focus-visible .waypoint-icon{background:var(--lamp);color:var(--button-ink)}
+dialog{background:var(--hero);color:var(--fg);border-color:var(--pill-line);color-scheme:dark}dialog::backdrop{background:#0e1615dc}
+.dialog-heading h2{font:500 25px/1.25 var(--display)}.dialog-heading .eyebrow,.map-disclaimer{color:var(--site-muted)}.close-dialog{color:var(--lamp)}
+.sources-body{font:20px/1.5 var(--serif)}.sources-body h3{font:500 16px/1.4 var(--display);color:var(--lamp)}
+.map-marker{background:var(--lamp);color:var(--button-ink);border-color:var(--hero)}
+@media(min-width:1500px){.journal h2{font-size:28px}.scene-description{font-size:21px}}
+@media(max-width:1050px){.brand{font-size:20px}.journal h2{font-size:23px}.overview-controls button{font-size:14px}#step-forward{font-size:15px}.plate h1{font-size:38px}}
+@media(max-width:720px){
+ .masthead{padding-inline:18px}.brand{font-size:16px;gap:10px;letter-spacing:.02em}.brand small{font-size:8px}.brand-cover{width:27px;height:43px}.back-link{font-size:9px;letter-spacing:0;padding:10px}
+ .journal h2{font-size:26px}.journal .eyebrow{font-size:9px}.scene-description{font-size:20px}.locations{grid-template-columns:repeat(2,minmax(0,1fr))}.locations button{font-size:17px;white-space:normal}
+ .plate h1{font-size:33px}.plate[data-mode=look] h1{font-size:21px}.view-tools button span{font-size:14px}
+ .walk-controls{border-color:var(--pill-line)}#position-label{font-size:19px}#step-forward{font-size:16px;border-top-color:var(--pill-line)}
+ .hotspot-label>span{font-size:16px}.hotspot-label strong{font-size:21px}.overview-controls #begin-walk{font-size:10px}
+ .room-exits button{font-size:16px}.folio{font-size:15px;padding-inline:24px}.sources-body{font-size:18px}
+}
