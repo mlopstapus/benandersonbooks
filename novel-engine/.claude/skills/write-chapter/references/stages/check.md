@@ -40,6 +40,12 @@ Start a subagent that did **not** draft the chapter. It reports only and changes
 
 **Re-checking a chapter that is already synced:** canon now contains this chapter's own facts, which makes the invented-facts check circular. Tell the reviewer to treat canon lines sourced to this chapter as unverified, or to compare against the book's commit from before this chapter's sync.
 
+**Repetition count (motif density).** Alongside the review, the main session counts each motif in the outline's **Motif budget** table in this chapter: full descriptions and passing mentions separately (grep the motif's key words, then read each hit). Flag as *should fix*:
+- a full description in a chapter the budget doesn't give one to, or one that adds nothing new (a cost, a limit, a consequence);
+- a motif mentioned more often than its average per chapter so far (keep the running counts in the check report, one row per motif), or past its cap;
+- a recurring motif the budget doesn't list (add it to the budget as a proposal, or cut it).
+Report the counts as a small table in the check report. Low word-for-word duplication doesn't clear a chapter: in *Ash of Verdance* the problem was the recurring beat, not copied sentences. If the outline has no motif budget, list the chapter's recurring rituals and sensations and propose one.
+
 ## 2. Fix
 Done by the main session, not the reviewer.
 - Fix clear errors directly (exact-match edits; see conventions).

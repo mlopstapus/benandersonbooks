@@ -28,7 +28,7 @@ If N isn't given, use the lowest chapter that isn't `synced`; if all are synced,
 
 **Re-opening a finished chapter.** "Re-check chapter N" or new notes on a `synced` chapter: run the check stage (it has rules for synced chapters), and after the author approves the changes, run the approve stage again for any fact that changed.
 
-Before chapter N's brief, chapter N−1 should be `synced`. If it isn't, say so and offer to finish it first; the brief depends on canon being current.
+Before chapter N's brief, chapter N−1 should be `synced`. If it isn't, say so and offer to finish it first; the brief depends on canon being current. Before chapter 4's brief, the cold read of chapters 1–3 should be done (`approve.md` → Cold read); if `manuscript/reports/` has no cold-read report, offer it first.
 
 ## The two gates
 1. **Brief approval.** No prose until the author approves the brief. The brief is where story decisions happen; drafting only carries them out.

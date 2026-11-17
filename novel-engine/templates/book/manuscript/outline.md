@@ -43,6 +43,11 @@ The big scenes, each turning on a different rule of the core system or a differe
 | Ch | Scene | Kind (heist, fight, chase, stealth, standoff, ordeal, talk-down, reveal) | Rule or setup it turns on |
 |---|---|---|---|
 
+# Motif budget
+Every recurring ritual, sensation or effect of the core system, and any habit or feeling the book leans on. Full description only where this table says; elsewhere a phrase or nothing (the motif-budget rule in the style guide). Each brief lists its motifs and what is new about each; each check counts them.
+| Motif | Full on the page (chapters, and what is new each time) | Otherwise |
+|---|---|---|
+
 # Climax
 Beat by beat, using only locked rules and things the reader has already seen. Note any cut-away (the plan hidden from the reader) and where the reveal lands, including from another POV.
 

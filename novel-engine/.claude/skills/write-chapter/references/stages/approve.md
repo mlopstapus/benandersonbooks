@@ -28,6 +28,13 @@ The approved chapter, its brief, the check report, and the author's answers on p
     - a feedback memory for anything about how the author likes to work.
     Apply what the author approves. Save the retro to `manuscript/reports/chNN-retro-YYYY-MM-DD.md`, commit `retro: chNN` in the book (engine changes are committed in the engine repo only when the author asks), and log it.
 
+## Cold read (after chapter 3 is synced)
+Before chapter 4's brief, get a cold read of the opening: the prelude (if any) and chapters 1–3.
+- **A fresh subagent** that has read nothing of the book's wiki: give it only the chapter files, with frontmatter stripped. It reads them as a first-time reader who doesn't know the world and reports **only** two things, each with a quote and line reference: terms, names or references it had to stop on or couldn't work out, and missing setting cues (where and when a scene is, what kind of world this is, what is normal here). No style notes, no plot advice.
+- **One human reader** who doesn't know the world, if the author has one: same two questions.
+- Save the findings to `manuscript/reports/cold-read-ch01-03-YYYY-MM-DD.md`. Fixes go through the check stage's revise step for each chapter (re-sync any fact that changes); new standing lessons go into the retro. Then brief chapter 4.
+(*Ash of Verdance*: readers flagged world markers that arrived late and too many names; a reader who doesn't know the world sees those on page one, and the author can't.)
+
 ## Report
 A few lines: pages changed, map or sets updated, ripple effects that need a decision, the beta Doc updated (with its new version), and the retro's proposals. Offer `/write-chapter N+1`.
 
