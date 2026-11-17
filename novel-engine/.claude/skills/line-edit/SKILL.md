@@ -23,6 +23,8 @@ Pick the mode(s) from the request. Each has its own file in `references/modes/`;
 
 A full pre-release pass runs: repeats → trim → pronoun and belonging → word sweep → beta sync. (Structure and continuity come before line editing; don't polish chapters that may be cut.)
 
+**Advance readers before the final lock.** After the pre-release pass and before the book is locked for release, the revised book goes to a few advance readers who haven't read it as betas, while changes are still cheap. Ask them what reviewers will notice: what repeats, what is explained more than once, which names or places blur, where the world surprised them, and where the pace sagged (especially after the big reveal). Work their notes through the beta-comments mode; anything structural goes back to `/write-chapter` or `/book-plan`. Log the round as `advance readers`. (*Ash of Verdance*: the ritual repetition, over-explaining, a late real-world holiday, too many place names and the pacing after the reveal all reached readers only in published reviews.)
+
 ## Every mode
 1. **Commit first** inside the book folder, so the whole pass can be reverted in one step.
 2. **Read every chapter in scope in full.** Searches find candidates; reading finds problems. Never edit from search results alone.

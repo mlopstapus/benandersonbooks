@@ -12,6 +12,7 @@ Also run the **Extra lock questions** from every genre module named in `book.yam
 - **Play back every physical rule with a concrete test case** ("so at night, in the middle of a bridge, is there mist?"), and write canon lines with plain verbs. A vague verb ("rolls off water") can mean two opposite things.
 - What another user perceives, and whether users can recognize each other.
 - How to explain the system to a lay reader at first use (one or two lines of what the POV feels or sees).
+- **List every recurring ritual and sensation** of the system (the steps of each use, what the user feels, the tell, the return, the cost). Each becomes a row of the outline's motif budget at stage 6, so it is described in full only where it adds something new.
 - What counters the system, exactly (how far a flame clears it, how long a closed door holds), and every set piece that relies on a counter.
 - **Edge-case drill:** list every set piece and the climax as known so far; for each, what does it need the system to do, and is that legal? Fill the drill table on the system page. Include every security measure and break-in method in the plan (a lock, a seal, a guard post): does the system make it pointless or trivial?
 

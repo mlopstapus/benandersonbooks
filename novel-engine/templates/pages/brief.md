@@ -30,6 +30,8 @@ updated: {{date}}
 
 **Core system used:** which rules, which observable effects (only those in continuity.md), and what it costs.
 
+**Motifs:** each motif from the outline's motif budget this chapter uses, full or as a phrase, and for any full description what is new about it this time.
+
 **Characters on stage:** established characters only. Mark anyone new **NEW** (needs approval).
 
 **Locations:** from story/world and sets.md, with travel times.

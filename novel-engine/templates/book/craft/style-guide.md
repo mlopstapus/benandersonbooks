@@ -69,6 +69,9 @@ Sections A–C and E ship with the engine. They were learned the hard way while 
 39. **The working-routine rule: every routine an institution runs (intake, payment, tagging, inspections) works step by step:** who does what, when, with what proof, and how someone would cheat it. If canon doesn't say, ask at the brief. Don't simplify it on the page. (Thornwake ch 2: the clerk paid for every find and wrote its full tag on the spot, before anyone knew which finds were anchors; now canon has a dawn intake that tests finds in the mist, pays per anchor, and gives an intake tag first and a catalogue tag after research.) (author, 2026-11-03)
 40. **The no-unasked-motif rule: the drafter doesn't invent a recurring hardship or motif (debts, illness, money trouble, a grudge) the brief doesn't ask for.** One detail is texture; a second starts a thread the author has to decide on. When a draft would repeat one, ask. (Thornwake ch 2: the drafter added a candle debt beside the brief's coat loan, and Sabine began to read as broke instead of careful; the author then made the coat loan a deliberate plant.) (author, 2026-11-03)
 
+53. **The motif-budget rule: a recurring ritual or sensation gets its full description only when it adds something new** (a cost, a limit, a consequence for the plot). Otherwise compress it to a phrase, or skip it. Each brief lists the motifs its chapter uses and what is new about each; the outline's motif budget sets where the full versions go. (*Ash of Verdance* reader reviews, 2026-11-16: "repeated descriptions and emotional beats"; about 134 mentions of one ritual, roughly 5 a chapter. Low word-for-word duplication: the recurring beat, not copied sentences, was the problem.)
+54. **The one-trait-place rule: every recurring named place has one trait the reader can tell it by,** given at first appearance and kept; a place that never returns stays unnamed. (*Ash of Verdance* reader reviews, 2026-11-16: street names blurred together.)
+
 ## C. Anti-slop rules (AI-specific)
 - Name every person and place deliberately; never accept a model-default name. See [[ai-prose-tells]].
 - Prefer specific, unique genre details over generic ones.
@@ -118,6 +121,8 @@ Sections A–C and E ship with the engine. They were learned the hard way while 
 - [ ] First mentions (B38): does every note, label, sign or shorthand on the page get its meaning in the same or next line?
 - [ ] Routines (B39): does every institutional routine work step by step (who, when, what proof, how it could be cheated)?
 - [ ] Motifs (B40): any recurring hardship or motif the brief didn't ask for?
+- [ ] Motif budget (B53): is every full description of a ritual or sensation one the budget gives this chapter, and does it add something new? Is every other use a phrase or less?
+- [ ] One-trait places (B54): does every recurring named place show its one trait at first appearance? Is any one-off place named?
 
 ## F. Genre promises
 (book-new fills this from the genre modules.)
